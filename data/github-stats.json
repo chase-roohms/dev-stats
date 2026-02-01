@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-01T00:51:09.414244+00:00",
+  "last_updated": "2026-02-01T18:13:33.587624+00:00",
   "totals": {
     "total_stars": 29,
     "total_forks": 1,
@@ -109,7 +109,7 @@
       "watchers": 4,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-02-01T00:19:42Z"
+      "last_updated": "2026-02-01T16:06:36Z"
     },
     "chase-roohms/looney-tunes-assets": {
       "stars": 0,
@@ -157,7 +157,7 @@
       "watchers": 0,
       "open_issues": 0,
       "description": "GitHub pages site to host a Spotify-like \"Wrapped\" experience for my plex server",
-      "last_updated": "2026-01-31T03:08:57Z"
+      "last_updated": "2026-02-01T16:09:30Z"
     },
     "chase-roohms/poster-tools": {
       "stars": 0,
