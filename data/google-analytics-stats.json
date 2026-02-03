@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-02-03T06:25:33.770189+00:00",
+  "last_updated": "2026-02-03T12:20:31.530605+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 5,
-    "total_page_views": 286
+    "total_page_views": 287
   },
   "blog_posts": {
     "/blog/benefits-of-dockerization/": {
       "page_views": 95
     },
     "/blog/anatomy-of-a-reusable-gha/": {
-      "page_views": 75
+      "page_views": 76
     },
     "/blog/criteria-for-automation/": {
       "page_views": 75
