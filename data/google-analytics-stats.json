@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-02-04T00:41:14.386446+00:00",
+  "last_updated": "2026-02-05T06:28:58.001234+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 5,
-    "total_page_views": 300
+    "total_page_views": 302
   },
   "blog_posts": {
     "/blog/benefits-of-dockerization/": {
@@ -20,7 +20,7 @@
       "page_views": 33
     },
     "/blog/communicationg-with-executives/": {
-      "page_views": 8
+      "page_views": 10
     }
   }
 }
