@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-02-07T00:41:56.405156+00:00",
+  "last_updated": "2026-02-07T05:53:58.341956+00:00",
   "totals": {
-    "total_stars": 29,
+    "total_stars": 36,
     "total_forks": 1,
-    "total_watchers": 29,
+    "total_watchers": 36,
     "total_open_issues": 1
   },
   "repositories": {
@@ -29,7 +29,7 @@
       "watchers": 0,
       "open_issues": 0,
       "description": "Personal portfolio website built using Vite + React 18 + TypeScript",
-      "last_updated": "2026-02-06T04:03:11Z"
+      "last_updated": "2026-02-07T05:49:26Z"
     },
     "chase-roohms/cloudflare-error-worker": {
       "stars": 0,
@@ -56,9 +56,9 @@
       "last_updated": "2026-01-21T19:14:43Z"
     },
     "chase-roohms/discord-notify": {
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
-      "watchers": 0,
+      "watchers": 1,
       "open_issues": 0,
       "description": "Send a message to a discord webhook with support for embeds and embed updates",
       "last_updated": "2026-01-22T21:46:20Z"
@@ -72,9 +72,9 @@
       "last_updated": "2026-01-20T17:48:50Z"
     },
     "chase-roohms/dumpsterr": {
-      "stars": 21,
+      "stars": 22,
       "forks": 0,
-      "watchers": 21,
+      "watchers": 22,
       "open_issues": 0,
       "description": "Safely empties your Plex trash, verifying file availability before doing so. Prevents unintentional deletion of movies and shows when drives are disconnected.",
       "last_updated": "2026-01-31T16:52:41Z"
@@ -104,9 +104,9 @@
       "last_updated": "2024-07-27T01:29:42Z"
     },
     "chase-roohms/kometa-configs": {
-      "stars": 4,
+      "stars": 5,
       "forks": 1,
-      "watchers": 4,
+      "watchers": 5,
       "open_issues": 1,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
       "last_updated": "2026-02-05T22:27:51Z"
@@ -120,9 +120,9 @@
       "last_updated": "2025-12-20T17:32:00Z"
     },
     "chase-roohms/mythicmate": {
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
-      "watchers": 1,
+      "watchers": 2,
       "open_issues": 0,
       "description": "A powerful D&D Discord bot designed for seamless remote gameplay. MythicMate provides intuitive dice rolling, comprehensive rules referencing, and AI-powered assistance, all optimized for speed and ease of use.",
       "last_updated": "2026-01-14T04:07:51Z"
@@ -200,12 +200,12 @@
       "last_updated": "2025-10-30T22:01:05Z"
     },
     "chase-roohms/schema-validator": {
-      "stars": 0,
+      "stars": 2,
       "forks": 0,
-      "watchers": 0,
+      "watchers": 2,
       "open_issues": 0,
       "description": "Validate JSON, YAML, and XML files against a schema. Schemas can be provided either via file or URL",
-      "last_updated": "2026-02-07T00:35:50Z"
+      "last_updated": "2026-02-07T05:34:04Z"
     },
     "chase-roohms/ServerConfig": {
       "stars": 0,
@@ -224,9 +224,9 @@
       "last_updated": "2024-02-05T01:38:39Z"
     },
     "chase-roohms/tag-and-release": {
-      "stars": 2,
+      "stars": 3,
       "forks": 0,
-      "watchers": 2,
+      "watchers": 3,
       "open_issues": 0,
       "description": "GitHub action to tag and release new versions, with optional updates to parent tags (e.g. updating v3 and v3.5 when releasing v3.5.2)",
       "last_updated": "2026-01-30T23:18:40Z"
