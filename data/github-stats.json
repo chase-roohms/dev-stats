@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-06T06:26:39.738907+00:00",
+  "last_updated": "2026-02-07T00:41:56.405156+00:00",
   "totals": {
     "total_stars": 29,
     "total_forks": 1,
@@ -198,6 +198,14 @@
       "open_issues": 0,
       "description": "Collection of my recyclarr config files",
       "last_updated": "2025-10-30T22:01:05Z"
+    },
+    "chase-roohms/schema-validator": {
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "description": "Validate JSON, YAML, and XML files against a schema. Schemas can be provided either via file or URL",
+      "last_updated": "2026-02-07T00:35:50Z"
     },
     "chase-roohms/ServerConfig": {
       "stars": 0,
