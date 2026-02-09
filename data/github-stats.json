@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-02-08T12:16:18.374139+00:00",
+  "last_updated": "2026-02-09T06:34:32.915710+00:00",
   "totals": {
-    "total_stars": 39,
+    "total_stars": 43,
     "total_forks": 1,
-    "total_watchers": 39,
+    "total_watchers": 43,
     "total_open_issues": 0
   },
   "repositories": {
@@ -72,9 +72,9 @@
       "last_updated": "2026-01-20T17:48:50Z"
     },
     "chase-roohms/dumpsterr": {
-      "stars": 23,
+      "stars": 24,
       "forks": 0,
-      "watchers": 23,
+      "watchers": 24,
       "open_issues": 0,
       "description": "Safely empties your Plex trash, verifying file availability before doing so. Prevents unintentional deletion of movies and shows when drives are disconnected.",
       "last_updated": "2026-01-31T16:52:41Z"
@@ -104,12 +104,12 @@
       "last_updated": "2024-07-27T01:29:42Z"
     },
     "chase-roohms/kometa-configs": {
-      "stars": 5,
+      "stars": 6,
       "forks": 1,
-      "watchers": 5,
+      "watchers": 6,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-02-08T05:42:40Z"
+      "last_updated": "2026-02-09T06:05:31Z"
     },
     "chase-roohms/looney-tunes-assets": {
       "stars": 0,
@@ -120,9 +120,9 @@
       "last_updated": "2025-12-20T17:32:00Z"
     },
     "chase-roohms/mythicmate": {
-      "stars": 2,
+      "stars": 3,
       "forks": 0,
-      "watchers": 2,
+      "watchers": 3,
       "open_issues": 0,
       "description": "A powerful D&D Discord bot designed for seamless remote gameplay. MythicMate provides intuitive dice rolling, comprehensive rules referencing, and AI-powered assistance, all optimized for speed and ease of use.",
       "last_updated": "2026-01-14T04:07:51Z"
@@ -200,12 +200,12 @@
       "last_updated": "2025-10-30T22:01:05Z"
     },
     "chase-roohms/schema-validator": {
-      "stars": 4,
+      "stars": 5,
       "forks": 0,
-      "watchers": 4,
+      "watchers": 5,
       "open_issues": 0,
       "description": "Validate JSON, YAML, and XML files against a schema. Schemas can be provided either via file or URL",
-      "last_updated": "2026-02-07T18:18:47Z"
+      "last_updated": "2026-02-09T04:12:40Z"
     },
     "chase-roohms/ServerConfig": {
       "stars": 0,
