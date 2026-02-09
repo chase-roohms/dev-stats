@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-02-09T06:34:32.915710+00:00",
+  "last_updated": "2026-02-09T18:26:22.986161+00:00",
   "totals": {
-    "total_stars": 43,
+    "total_stars": 45,
     "total_forks": 1,
-    "total_watchers": 43,
+    "total_watchers": 45,
     "total_open_issues": 0
   },
   "repositories": {
@@ -72,12 +72,12 @@
       "last_updated": "2026-01-20T17:48:50Z"
     },
     "chase-roohms/dumpsterr": {
-      "stars": 24,
+      "stars": 26,
       "forks": 0,
-      "watchers": 24,
+      "watchers": 26,
       "open_issues": 0,
       "description": "Safely empties your Plex trash, verifying file availability before doing so. Prevents unintentional deletion of movies and shows when drives are disconnected.",
-      "last_updated": "2026-01-31T16:52:41Z"
+      "last_updated": "2026-02-09T15:15:33Z"
     },
     "chase-roohms/gif-tools": {
       "stars": 0,
