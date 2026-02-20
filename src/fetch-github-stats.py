@@ -15,9 +15,8 @@ def main():
         with open(stats_file, 'r') as f:
             old_stats = json.load(f)
     
-    requester = gh_api.GitHubRestApi(owner="chase-roohms")
-    repos = requester.get_all_repos_for_user()
-    repo_names = [repo["name"] for repo in repos if repo["name"] != "dev-stats"]
+    # Track multiple users
+    owners = ["chase-roohms", "transmute-app"]
     
     # Fetch stats for each repo
     new_repositories = {}
@@ -26,34 +25,41 @@ def main():
     sum_watchers = 0
     sum_open_issues = 0
     
-    for repo in repo_names:
-        print(f"Fetching stats for {requester.owner}/{repo}...")
-        try:
-            stars = requester.get_repo_star_count(repo=repo)
-            sum_stars += stars
-            forks = requester.get_repo_fork_count(repo=repo)
-            sum_forks += forks
-            watchers = requester.get_repo_watchers_count(repo=repo)
-            sum_watchers += watchers
-            open_issues = requester.get_repo_open_issues_count(repo=repo)
-            sum_open_issues += open_issues
-            description = requester.get_repo_description(repo=repo)
-            last_pushed = requester.get_repo_last_pushed(repo=repo)
+    for owner in owners:
+        requester = gh_api.GitHubRestApi(owner=owner)
+        repos = requester.get_all_repos_for_user()
+        repo_names = [repo["name"] for repo in repos if repo["name"] != "dev-stats"]
+        
+        for repo in repo_names:
+            print(f"Fetching stats for {requester.owner}/{repo}...")
+            try:
+                stars = requester.get_repo_star_count(repo=repo)
+                sum_stars += stars
+                forks = requester.get_repo_fork_count(repo=repo)
+                sum_forks += forks
+                watchers = requester.get_repo_watchers_count(repo=repo)
+                sum_watchers += watchers
+                open_issues = requester.get_repo_open_issues_count(repo=repo)
+                sum_open_issues += open_issues
+                description = requester.get_repo_description(repo=repo)
+                last_pushed = requester.get_repo_last_pushed(repo=repo)
+                
+                new_repositories[f'{requester.owner}/{repo}'] = {
+                    "stars": stars,
+                    "forks": forks,
+                    "watchers": watchers,
+                    "open_issues": open_issues,
+                    "description": description,
+                    "last_updated": last_pushed
+                }
+                print(f"  ✓ {requester.owner}/{repo}: {stars} stars, {forks} forks")
+            except Exception as e:
+                print(f"  ✗ Error fetching {requester.owner}/{repo}: {e}")
+                new_repositories[f'{requester.owner}/{repo}'] = {
+                    "error": str(e)
+                }
             
-            new_repositories[f'{requester.owner}/{repo}'] = {
-                "stars": stars,
-                "forks": forks,
-                "watchers": watchers,
-                "open_issues": open_issues,
-                "description": description,
-                "last_updated": last_pushed
-            }
-            print(f"  ✓ {requester.owner}/{repo}: {stars} stars, {forks} forks")
-        except Exception as e:
-            print(f"  ✗ Error fetching {requester.owner}/{repo}: {e}")
-            new_repositories[f'{requester.owner}/{repo}'] = {
-                "error": str(e)
-            }
+        requester.close()
     
     # Calculate totals
     totals = {
@@ -85,8 +91,6 @@ def main():
         print(f"\nChanges detected! Stats saved to {stats_file}")
     else:
         print(f"\nNo changes detected. {stats_file} unchanged.")
-    
-    requester.close()
 
 
 if __name__ == "__main__":
