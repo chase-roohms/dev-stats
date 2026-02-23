@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-02-23T13:21:41.791057+00:00",
+  "last_updated": "2026-02-23T18:30:09.626672+00:00",
   "totals": {
-    "total_pulls": 2441,
+    "total_pulls": 2444,
     "total_stars": 0
   },
   "repositories": {
     "neonvariant/dumpsterr": {
-      "pull_count": 1527,
+      "pull_count": 1530,
       "star_count": 0,
       "description": "Safely empties your Plex trash, verifying file availability before doing so.",
       "last_updated": "2026-01-22T21:57:56.156046Z"
