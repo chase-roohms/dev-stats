@@ -15,6 +15,13 @@ def main():
         with open(stats_file, 'r') as f:
             old_stats = json.load(f)
     
+    # Check for GitHub token (falls back to unauthenticated if not provided)
+    github_token = os.environ.get('GITHUB_TOKEN')
+    if github_token:
+        print("✓ Using authenticated GitHub API requests")
+    else:
+        print("⚠ No GITHUB_TOKEN found, using unauthenticated requests (lower rate limits)")
+    
     # Track multiple users
     owners = ["chase-roohms", "transmute-app"]
     
@@ -26,7 +33,7 @@ def main():
     sum_open_issues = 0
     
     for owner in owners:
-        requester = gh_api.GitHubRestApi(owner=owner)
+        requester = gh_api.GitHubRestApi(token=github_token, owner=owner)
         repos = requester.get_all_repos_for_user()
         repo_names = [repo["name"] for repo in repos if repo["name"] != "dev-stats"]
         

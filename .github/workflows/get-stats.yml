@@ -45,6 +45,8 @@ jobs:
           python src/fetch-dockerhub-stats.py
       
       - name: Fetch GitHub stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python src/fetch-github-stats.py
           

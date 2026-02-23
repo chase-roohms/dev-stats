@@ -114,6 +114,23 @@ Configure the user in `src/fetch-github-stats.py`:
 owner = "chase-roohms"  # Change to your GitHub username
 ```
 
+**Authentication (Optional but Recommended):**
+
+The script supports GitHub token authentication for higher rate limits:
+
+```bash
+# Set GitHub token for authenticated requests (5,000 requests/hour)
+export GITHUB_TOKEN="your_github_token_here"
+
+# Without token: unauthenticated requests (60 requests/hour)
+python fetch-github-stats.py
+```
+
+To create a GitHub token:
+1. Go to GitHub Settings > Developer settings > Personal access tokens > Tokens (classic)
+2. Generate new token with `public_repo` scope (or no scopes for public repositories only)
+3. Set the `GITHUB_TOKEN` environment variable or add it to your GitHub Actions secrets
+
 ### Google Analytics Statistics
 
 Fetches page view statistics for blog posts:
