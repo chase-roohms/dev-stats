@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-02-24T12:24:05.982190+00:00",
+  "last_updated": "2026-02-24T18:28:17.268838+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 5,
-    "total_page_views": 341
+    "total_page_views": 342
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -17,7 +17,7 @@
       "page_views": 75
     },
     "/blog/home-lab-setup/": {
-      "page_views": 33
+      "page_views": 34
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 10
