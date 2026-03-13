@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-03-13T00:43:36.585804+00:00",
+  "last_updated": "2026-03-13T06:25:45.910417+00:00",
   "totals": {
     "total_stars": 74,
-    "total_forks": 15,
+    "total_forks": 14,
     "total_watchers": 74,
     "total_open_issues": 6
   },
@@ -77,7 +77,7 @@
       "watchers": 28,
       "open_issues": 0,
       "description": "Safely empties your Plex trash, verifying file availability before doing so. Prevents unintentional deletion of movies and shows when drives are disconnected.",
-      "last_updated": "2026-02-09T15:15:33Z"
+      "last_updated": "2026-03-13T02:06:12Z"
     },
     "chase-roohms/gif-tools": {
       "stars": 0,
@@ -245,7 +245,7 @@
       "watchers": 0,
       "open_issues": 0,
       "description": "Automated repository storing the current available conversions in Transmute",
-      "last_updated": "2026-03-13T00:33:47Z"
+      "last_updated": "2026-03-13T03:20:46Z"
     },
     "transmute-app/openapi-specifications": {
       "stars": 0,
@@ -257,11 +257,11 @@
     },
     "transmute-app/transmute": {
       "stars": 19,
-      "forks": 13,
+      "forks": 12,
       "watchers": 19,
       "open_issues": 5,
       "description": "Convert anything, anywhere. Self hosted file converter for images, video, audio, json, excel and more!",
-      "last_updated": "2026-03-13T00:32:47Z"
+      "last_updated": "2026-03-13T03:19:56Z"
     },
     "transmute-app/transmute-app.github.io": {
       "stars": 1,
@@ -269,7 +269,7 @@
       "watchers": 1,
       "open_issues": 0,
       "description": "Documentation / promotional website for the Transmute project",
-      "last_updated": "2026-03-10T01:24:11Z"
+      "last_updated": "2026-03-13T02:09:06Z"
     }
   }
 }
