@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-13T18:18:10.319357+00:00",
+  "last_updated": "2026-03-14T00:41:45.479867+00:00",
   "totals": {
     "total_stars": 77,
     "total_forks": 14,
@@ -245,7 +245,7 @@
       "watchers": 0,
       "open_issues": 0,
       "description": "Automated repository storing the current available conversions in Transmute",
-      "last_updated": "2026-03-13T03:20:46Z"
+      "last_updated": "2026-03-14T00:24:13Z"
     },
     "transmute-app/openapi-specifications": {
       "stars": 0,
@@ -255,13 +255,21 @@
       "description": "Automated repository storing the current OpenAPI specs for Transmute",
       "last_updated": "2026-03-11T11:58:56Z"
     },
+    "transmute-app/samples-examples": {
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "description": "Sample files to test out conversions, and example api calls for some common use cases",
+      "last_updated": "2026-03-14T00:30:02Z"
+    },
     "transmute-app/transmute": {
       "stars": 21,
       "forks": 12,
       "watchers": 21,
       "open_issues": 5,
       "description": "Convert anything, anywhere. Self hosted file converter for images, video, audio, json, excel and more!",
-      "last_updated": "2026-03-13T03:19:56Z"
+      "last_updated": "2026-03-14T00:24:28Z"
     },
     "transmute-app/transmute-app.github.io": {
       "stars": 2,
