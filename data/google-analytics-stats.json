@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-12T12:21:05.957480+00:00",
+  "last_updated": "2026-03-15T00:51:23.769932+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
-    "total_blog_posts": 6,
-    "total_page_views": 432
+    "total_blog_posts": 7,
+    "total_page_views": 468
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -17,7 +17,10 @@
       "page_views": 78
     },
     "/blog/static-site-dynamic-data/": {
-      "page_views": 58
+      "page_views": 59
+    },
+    "/blog/building-transmute/": {
+      "page_views": 35
     },
     "/blog/home-lab-setup/": {
       "page_views": 35
