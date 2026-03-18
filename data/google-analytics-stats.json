@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-17T12:26:47.077746+00:00",
+  "last_updated": "2026-03-18T18:28:25.930164+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 7,
-    "total_page_views": 496
+    "total_page_views": 499
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -17,7 +17,7 @@
       "page_views": 78
     },
     "/blog/building-transmute/": {
-      "page_views": 62
+      "page_views": 65
     },
     "/blog/static-site-dynamic-data/": {
       "page_views": 59
