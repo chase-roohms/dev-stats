@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-19T00:46:18.192440+00:00",
+  "last_updated": "2026-03-19T06:29:58.234519+00:00",
   "totals": {
     "total_stars": 133,
     "total_forks": 16,
@@ -109,7 +109,7 @@
       "watchers": 6,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-03-18T17:06:35Z"
+      "last_updated": "2026-03-19T02:56:31Z"
     },
     "chase-roohms/looney-tunes-assets": {
       "stars": 0,
