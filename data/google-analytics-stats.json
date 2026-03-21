@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-21T06:21:01.267401+00:00",
+  "last_updated": "2026-03-21T18:13:58.020012+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 8,
-    "total_page_views": 519
+    "total_page_views": 521
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -17,7 +17,7 @@
       "page_views": 78
     },
     "/blog/building-transmute/": {
-      "page_views": 69
+      "page_views": 68
     },
     "/blog/static-site-dynamic-data/": {
       "page_views": 63
@@ -29,7 +29,7 @@
       "page_views": 15
     },
     "/blog/road-to-one-hundred-stars/": {
-      "page_views": 12
+      "page_views": 15
     }
   }
 }

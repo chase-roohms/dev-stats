@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-21T12:16:17.776296+00:00",
+  "last_updated": "2026-03-21T18:13:59.358232+00:00",
   "totals": {
-    "total_stars": 164,
+    "total_stars": 167,
     "total_forks": 17,
-    "total_watchers": 164,
-    "total_open_issues": 7
+    "total_watchers": 167,
+    "total_open_issues": 6
   },
   "repositories": {
     "chase-roohms/BinarySearchTree_Implementation": {
@@ -53,7 +53,7 @@
       "watchers": 0,
       "open_issues": 0,
       "description": "Wishes my friends happy birthday in our shared Discord server automatically",
-      "last_updated": "2026-01-21T19:14:43Z"
+      "last_updated": "2026-03-21T13:43:26Z"
     },
     "chase-roohms/discord-notify": {
       "stars": 1,
@@ -200,9 +200,9 @@
       "last_updated": "2025-10-30T22:01:05Z"
     },
     "chase-roohms/schema-validator": {
-      "stars": 6,
+      "stars": 7,
       "forks": 0,
-      "watchers": 6,
+      "watchers": 7,
       "open_issues": 0,
       "description": "Validate JSON, YAML, and XML files against a schema. Schemas can be provided either via file or URL",
       "last_updated": "2026-02-09T04:12:40Z"
@@ -237,7 +237,7 @@
       "watchers": 0,
       "open_issues": 0,
       "description": "Special repository for managing organization details and shared documentation.",
-      "last_updated": "2026-03-01T17:07:30Z"
+      "last_updated": "2026-03-21T14:07:37Z"
     },
     "transmute-app/conversion-compatibility": {
       "stars": 0,
@@ -253,7 +253,7 @@
       "watchers": 0,
       "open_issues": 0,
       "description": "Automated repository storing the current OpenAPI specs for Transmute",
-      "last_updated": "2026-03-11T11:58:56Z"
+      "last_updated": "2026-03-21T14:12:13Z"
     },
     "transmute-app/samples-examples": {
       "stars": 1,
@@ -264,12 +264,12 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 106,
+      "stars": 108,
       "forks": 15,
-      "watchers": 106,
-      "open_issues": 5,
+      "watchers": 108,
+      "open_issues": 4,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports over 2,000 conversions!",
-      "last_updated": "2026-03-21T01:26:31Z"
+      "last_updated": "2026-03-21T14:39:22Z"
     },
     "transmute-app/transmute-app.github.io": {
       "stars": 2,
