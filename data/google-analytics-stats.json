@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-19T18:25:51.876731+00:00",
+  "last_updated": "2026-03-21T06:21:01.267401+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
-    "total_blog_posts": 7,
-    "total_page_views": 503
+    "total_blog_posts": 8,
+    "total_page_views": 519
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -17,7 +17,7 @@
       "page_views": 78
     },
     "/blog/building-transmute/": {
-      "page_views": 65
+      "page_views": 69
     },
     "/blog/static-site-dynamic-data/": {
       "page_views": 63
@@ -27,6 +27,9 @@
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 15
+    },
+    "/blog/road-to-one-hundred-stars/": {
+      "page_views": 12
     }
   }
 }
