@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-03-22T12:16:53.995516+00:00",
+  "last_updated": "2026-03-22T18:14:35.898513+00:00",
   "totals": {
-    "total_pulls": 8374,
+    "total_pulls": 8393,
     "total_stars": 1
   },
   "repositories": {
     "neonvariant/dumpsterr": {
-      "pull_count": 1833,
+      "pull_count": 1838,
       "star_count": 0,
       "description": "Safely empties your Plex trash, verifying file availability before doing so.",
       "last_updated": "2026-03-13T02:09:13.032944Z"
@@ -18,7 +18,7 @@
       "last_updated": "2026-01-14T04:07:08.811234Z"
     },
     "neonvariant/transmute": {
-      "pull_count": 5937,
+      "pull_count": 5951,
       "star_count": 1,
       "description": "Convert anything, anywhere. Self hosted file converter for images, video, audio, and more!",
       "last_updated": "2026-03-22T03:53:14.704768Z"
