@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-26T12:30:42.637989+00:00",
+  "last_updated": "2026-03-26T18:30:29.845972+00:00",
   "totals": {
-    "total_stars": 257,
+    "total_stars": 258,
     "total_forks": 21,
-    "total_watchers": 257,
-    "total_open_issues": 5
+    "total_watchers": 258,
+    "total_open_issues": 9
   },
   "repositories": {
     "chase-roohms/BinarySearchTree_Implementation": {
@@ -75,9 +75,9 @@
       "stars": 28,
       "forks": 0,
       "watchers": 28,
-      "open_issues": 0,
+      "open_issues": 1,
       "description": "Safely empties your Plex trash, verifying file availability before doing so. Prevents unintentional deletion of movies and shows when drives are disconnected.",
-      "last_updated": "2026-03-13T02:06:12Z"
+      "last_updated": "2026-03-26T17:51:24Z"
     },
     "chase-roohms/gif-tools": {
       "stars": 0,
@@ -109,7 +109,7 @@
       "watchers": 6,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-03-25T14:37:16Z"
+      "last_updated": "2026-03-26T16:35:29Z"
     },
     "chase-roohms/looney-tunes-assets": {
       "stars": 0,
@@ -203,9 +203,9 @@
       "stars": 7,
       "forks": 0,
       "watchers": 7,
-      "open_issues": 0,
+      "open_issues": 1,
       "description": "Validate JSON, YAML, and XML files against a schema. Schemas can be provided either via file or URL",
-      "last_updated": "2026-02-09T04:12:40Z"
+      "last_updated": "2026-03-26T18:00:00Z"
     },
     "chase-roohms/ServerConfig": {
       "stars": 0,
@@ -264,10 +264,10 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 196,
+      "stars": 197,
       "forks": 19,
-      "watchers": 196,
-      "open_issues": 3,
+      "watchers": 197,
+      "open_issues": 4,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports over 2,000 conversions!",
       "last_updated": "2026-03-26T12:19:40Z"
     },
@@ -275,9 +275,9 @@
       "stars": 3,
       "forks": 0,
       "watchers": 3,
-      "open_issues": 0,
+      "open_issues": 1,
       "description": "Documentation / promotional website for the Transmute project",
-      "last_updated": "2026-03-25T03:11:37Z"
+      "last_updated": "2026-03-26T13:57:37Z"
     }
   }
 }
