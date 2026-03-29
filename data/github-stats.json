@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-29T17:23:13.063141+00:00",
+  "last_updated": "2026-03-29T17:25:25.964090+00:00",
   "totals": {
     "total_stars": 368,
     "total_forks": 25,
@@ -287,5 +287,10 @@
       "description": "Template for the unraid community app store",
       "last_updated": "2026-03-29T01:57:37Z"
     }
-  }
+  },
+  "container_totals": {
+    "total_downloads": 0,
+    "total_containers": 0
+  },
+  "containers": {}
 }
