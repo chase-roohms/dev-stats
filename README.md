@@ -47,11 +47,12 @@ Every 6 hours this repository grabs the data from the requires sites and stores 
   - Repository descriptions
   - Last updated timestamps
   
-- **GitHub Stats**: Automatically fetches all repositories for a user
+- **GitHub Stats**: Automatically fetches all repositories and GHCR container stats for one or more owners
   - Star counts
   - Fork counts
   - Watcher counts
   - Open issues counts
+  - GHCR container download counts
 
 - **Google Analytics Stats**: Fetches page view statistics for blog posts
   - Total page views per blog post
@@ -101,7 +102,7 @@ namespace = "neonvariant"  # Change to your Docker Hub namespace
 
 ### GitHub Statistics
 
-Fetches all repositories for the configured user:
+Fetches all repositories for the configured owners, plus GHCR container download stats when a token is available:
 
 ```bash
 pip install -r requirements.txt
@@ -109,26 +110,26 @@ cd src
 python fetch-github-stats.py
 ```
 
-Configure the user in `src/fetch-github-stats.py`:
+Configure the owners in `src/fetch-github-stats.py`:
 ```python
-owner = "chase-roohms"  # Change to your GitHub username
+owners = ["chase-roohms", "transmute-app"]  # Change to your GitHub users/orgs
 ```
 
 **Authentication (Optional but Recommended):**
 
-The script supports GitHub token authentication for higher rate limits:
+The script supports GitHub token authentication for higher rate limits and GHCR package access:
 
 ```bash
 # Set GitHub token for authenticated requests (5,000 requests/hour)
 export GITHUB_TOKEN="your_github_token_here"
 
-# Without token: unauthenticated requests (60 requests/hour)
+# Without token: unauthenticated requests (60 requests/hour), GHCR stats skipped
 python fetch-github-stats.py
 ```
 
 To create a GitHub token:
 1. Go to GitHub Settings > Developer settings > Personal access tokens > Tokens (classic)
-2. Generate new token with `public_repo` scope (or no scopes for public repositories only)
+2. Generate a token with `read:packages` and any repository scopes you need for your repos
 3. Set the `GITHUB_TOKEN` environment variable or add it to your GitHub Actions secrets
 
 ### Google Analytics Statistics
@@ -302,6 +303,20 @@ All three scripts run every 6 hours via GitHub Actions to keep statistics curren
       "watchers": 5,
       "open_issues": 1,
       "description": "Repository description"
+    }
+  },
+  "container_totals": {
+    "total_downloads": 25000,
+    "total_containers": 3
+  },
+  "containers": {
+    "chase-roohms/my-image": {
+      "download_count": 12000,
+      "description": "Container package description",
+      "last_updated": "2026-01-20T12:00:00Z",
+      "version_count": 6,
+      "visibility": "public",
+      "url": "https://github.com/users/chase-roohms/packages/container/package/my-image"
     }
   }
 }

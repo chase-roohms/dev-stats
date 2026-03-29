@@ -3,7 +3,7 @@ import json
 import time
 import logging
 from typing import Optional, Dict, Any, Generator, List
-from urllib.parse import urljoin, urlparse, parse_qs
+from urllib.parse import quote, urljoin, urlparse, parse_qs
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +27,8 @@ class GitHubRestApi:
         self.cache_timeout_sec = cache_timeout_sec
         # Cache for repository data to minimize API calls
         self.cached_repositories = {}
+        self.cached_owners = {}
+        self.cached_packages = {}
         
         # Create persistent session for connection pooling
         self.session = requests.Session()
@@ -318,6 +320,134 @@ class GitHubRestApi:
                 raise ValueError("Owner must be specified either in method call or during initialization.")
             owner = self.owner
         return owner
+
+    def get_owner_metadata(self, owner: str = None) -> Dict[str, Any]:
+        """
+        Get metadata for the specified owner.
+
+        Args:
+            owner: The owner name
+
+        Returns:
+            Owner metadata from the GitHub API
+        """
+        owner = self.get_owner(owner)
+        curr_time = time.time()
+        cached = self.cached_owners.get(owner)
+        if cached:
+            cached_time, data = cached
+            if curr_time - cached_time < self.cache_timeout_sec:
+                return data
+
+        data = self.get(f"/users/{owner}")
+        self.cached_owners[owner] = (curr_time, data)
+        return data
+
+    def get_owner_type(self, owner: str = None) -> str:
+        """
+        Get the owner type for the specified owner.
+
+        Args:
+            owner: The owner name
+
+        Returns:
+            Owner type, usually User or Organization
+        """
+        owner_data = self.get_owner_metadata(owner)
+        return owner_data.get("type", "User")
+
+    def _get_owner_packages_endpoint(self, owner: str = None) -> str:
+        """
+        Get the correct package endpoint prefix for a user or organization owner.
+
+        Args:
+            owner: The owner name
+
+        Returns:
+            API endpoint prefix for package requests
+        """
+        owner = self.get_owner(owner)
+        owner_type = self.get_owner_type(owner)
+        if owner_type == "Organization":
+            return f"/orgs/{owner}"
+        return f"/users/{owner}"
+
+    def get_all_container_packages(self, owner: str = None) -> List[Dict[str, Any]]:
+        """
+        Get all GHCR container packages for the specified owner.
+
+        Args:
+            owner: The owner name
+
+        Returns:
+            List of container packages
+        """
+        endpoint_prefix = self._get_owner_packages_endpoint(owner)
+        return self.get_paginated(
+            f"{endpoint_prefix}/packages",
+            params={"package_type": "container"}
+        )
+
+    def get_container_package(self, package_name: str, owner: str = None) -> Dict[str, Any]:
+        """
+        Get metadata for a GHCR container package.
+
+        Args:
+            package_name: The package name
+            owner: The owner name
+
+        Returns:
+            Package metadata
+        """
+        owner = self.get_owner(owner)
+        cache_key = f"{owner}/{package_name}"
+        curr_time = time.time()
+        cached = self.cached_packages.get(cache_key)
+        if cached:
+            cached_time, data = cached
+            if curr_time - cached_time < self.cache_timeout_sec:
+                return data
+
+        endpoint_prefix = self._get_owner_packages_endpoint(owner)
+        encoded_package_name = quote(package_name, safe='')
+        data = self.get(f"{endpoint_prefix}/packages/container/{encoded_package_name}")
+        self.cached_packages[cache_key] = (curr_time, data)
+        return data
+
+    def get_container_package_versions(self, package_name: str, owner: str = None) -> List[Dict[str, Any]]:
+        """
+        Get all versions for a GHCR container package.
+
+        Args:
+            package_name: The package name
+            owner: The owner name
+
+        Returns:
+            List of package versions
+        """
+        endpoint_prefix = self._get_owner_packages_endpoint(owner)
+        encoded_package_name = quote(package_name, safe='')
+        return self.get_paginated(
+            f"{endpoint_prefix}/packages/container/{encoded_package_name}/versions"
+        )
+
+    def get_container_package_download_count(self, package_name: str, owner: str = None) -> int:
+        """
+        Get the total download count for a GHCR container package.
+
+        Args:
+            package_name: The package name
+            owner: The owner name
+
+        Returns:
+            Download count aggregated from package metadata or versions
+        """
+        package_data = self.get_container_package(package_name, owner)
+        if "download_count" in package_data:
+            return package_data.get("download_count", 0)
+
+        versions = self.get_container_package_versions(package_name, owner)
+        return sum(version.get("download_count", 0) for version in versions)
     
     def get_repo(self, repo: str, owner: str = None) -> Dict[str, Any]:
         """
