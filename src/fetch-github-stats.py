@@ -7,6 +7,13 @@ import os
 from datetime import datetime, UTC
 
 
+def _format_ghcr_error(error: Exception) -> str:
+    error_message = str(error)
+    if "403" in error_message:
+        return f"{error_message} (check that GITHUB_TOKEN includes read:packages and can access this owner's GHCR packages)"
+    return error_message
+
+
 def main():
     # Load existing stats if they exist
     old_stats = {}
@@ -80,24 +87,27 @@ def main():
                     container_key = f"{requester.owner}/{package_name}"
                     print(f"Fetching container stats for {container_key}...")
                     try:
+                        package_details = requester.get_container_package(package_name=package_name)
                         download_count = requester.get_container_package_download_count(package_name=package_name)
                         sum_container_downloads += download_count
                         new_containers[container_key] = {
                             "download_count": download_count,
-                            "description": container.get("repository", {}).get("description"),
-                            "last_updated": container.get("updated_at", ""),
-                            "version_count": container.get("version_count", 0),
-                            "visibility": container.get("visibility", ""),
-                            "url": container.get("html_url", "")
+                            "description": package_details.get("repository", {}).get("description"),
+                            "last_updated": package_details.get("updated_at", ""),
+                            "version_count": package_details.get("version_count", 0),
+                            "visibility": package_details.get("visibility", ""),
+                            "url": package_details.get("html_url", "")
                         }
                         print(f"  ✓ {container_key}: {download_count} downloads")
                     except Exception as e:
-                        print(f"  ✗ Error fetching {container_key}: {e}")
+                        error_message = _format_ghcr_error(e)
+                        print(f"  ✗ Error fetching {container_key}: {error_message}")
                         new_containers[container_key] = {
-                            "error": str(e)
+                            "error": error_message
                         }
             except Exception as e:
-                print(f"  ✗ Error listing GHCR containers for {requester.owner}: {e}")
+                error_message = _format_ghcr_error(e)
+                print(f"  ✗ Error listing GHCR containers for {requester.owner}: {error_message}")
             
         requester.close()
     

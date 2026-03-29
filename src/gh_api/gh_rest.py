@@ -2,10 +2,13 @@ import requests
 import json
 import time
 import logging
+import re
 from typing import Optional, Dict, Any, Generator, List
 from urllib.parse import quote, urljoin, urlparse, parse_qs
 
 logger = logging.getLogger(__name__)
+
+TOTAL_DOWNLOADS_PATTERN = re.compile(r'Total downloads</span>\s*<h3 title="([\d,]+)"')
 
 
 class GitHubRestApi:
@@ -116,7 +119,7 @@ class GitHubRestApi:
         retry_count = 0
         backoff_time = 1
         
-        while retry_count <= max_retries:
+        while True:
             try:
                 logger.debug(f"Making {method} request to {url}")
                 response = self.session.request(
@@ -131,13 +134,16 @@ class GitHubRestApi:
                 # Update rate limit info
                 self._update_rate_limit_info(response)
                 
-                # Handle rate limiting (403 with specific message or 429)
-                if response.status_code in [403, 429]:
+                # Handle explicit rate limiting and retryable secondary limits.
+                if response.status_code == 429:
                     retry_after = response.headers.get('Retry-After')
                     if retry_after:
                         wait_time = int(retry_after)
                     else:
                         wait_time = backoff_time
+
+                    if retry_count >= max_retries:
+                        response.raise_for_status()
                     
                     logger.warning(
                         f"Rate limited (status {response.status_code}). "
@@ -147,6 +153,34 @@ class GitHubRestApi:
                     retry_count += 1
                     backoff_time *= 2  # Exponential backoff
                     continue
+
+                if response.status_code == 403:
+                    response_text = response.text.lower()
+                    retry_after = response.headers.get('Retry-After')
+                    is_retryable_limit = (
+                        retry_after is not None
+                        or 'secondary rate limit' in response_text
+                        or 'rate limit exceeded' in response_text
+                        or 'abuse detection' in response_text
+                    )
+
+                    if is_retryable_limit:
+                        if retry_after:
+                            wait_time = int(retry_after)
+                        else:
+                            wait_time = backoff_time
+
+                        if retry_count >= max_retries:
+                            response.raise_for_status()
+
+                        logger.warning(
+                            f"Rate limited (status {response.status_code}). "
+                            f"Waiting {wait_time}s before retry {retry_count + 1}/{max_retries}"
+                        )
+                        time.sleep(wait_time)
+                        retry_count += 1
+                        backoff_time *= 2  # Exponential backoff
+                        continue
                 
                 # Raise for other HTTP errors
                 response.raise_for_status()
@@ -431,6 +465,34 @@ class GitHubRestApi:
             f"{endpoint_prefix}/packages/container/{encoded_package_name}/versions"
         )
 
+    def get_container_package_page_download_count(self, package_url: str) -> Optional[int]:
+        """
+        Get the total download count for a GHCR container package from the package page.
+
+        Args:
+            package_url: The GitHub package page URL
+
+        Returns:
+            The parsed total download count, or None if it could not be found
+        """
+        self._sleep_between_requests()
+        response = self.session.get(
+            package_url,
+            headers={
+                'Accept': 'text/html,application/xhtml+xml',
+                'User-Agent': 'Mozilla/5.0'
+            },
+            allow_redirects=True
+        )
+        self.last_request_time = time.time()
+        response.raise_for_status()
+
+        match = TOTAL_DOWNLOADS_PATTERN.search(response.text)
+        if not match:
+            return None
+
+        return int(match.group(1).replace(',', ''))
+
     def get_container_package_download_count(self, package_name: str, owner: str = None) -> int:
         """
         Get the total download count for a GHCR container package.
@@ -443,6 +505,12 @@ class GitHubRestApi:
             Download count aggregated from package metadata or versions
         """
         package_data = self.get_container_package(package_name, owner)
+        package_url = package_data.get("html_url")
+        if package_url:
+            page_download_count = self.get_container_package_page_download_count(package_url)
+            if page_download_count is not None:
+                return page_download_count
+
         if "download_count" in package_data:
             return package_data.get("download_count", 0)
 
