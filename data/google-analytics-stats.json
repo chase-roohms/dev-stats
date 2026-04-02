@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-01T12:31:01.996273+00:00",
+  "last_updated": "2026-04-02T12:30:09.363361+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 8,
-    "total_page_views": 612
+    "total_page_views": 613
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -16,11 +16,11 @@
     "/blog/road-to-one-hundred-stars/": {
       "page_views": 82
     },
-    "/blog/criteria-for-automation/": {
+    "/blog/building-transmute/": {
       "page_views": 78
     },
-    "/blog/building-transmute/": {
-      "page_views": 77
+    "/blog/criteria-for-automation/": {
+      "page_views": 78
     },
     "/blog/static-site-dynamic-data/": {
       "page_views": 74
