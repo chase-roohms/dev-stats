@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-17T18:26:21.693698+00:00",
+  "last_updated": "2026-04-19T00:57:02.226175+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 8,
-    "total_page_views": 622
+    "total_page_views": 623
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -14,7 +14,7 @@
       "page_views": 116
     },
     "/blog/road-to-one-hundred-stars/": {
-      "page_views": 86
+      "page_views": 87
     },
     "/blog/criteria-for-automation/": {
       "page_views": 80
