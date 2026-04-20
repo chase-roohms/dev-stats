@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-19T18:21:02.012188+00:00",
+  "last_updated": "2026-04-20T00:55:30.317088+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 9,
-    "total_page_views": 646
+    "total_page_views": 672
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -25,11 +25,11 @@
     "/blog/static-site-dynamic-data/": {
       "page_views": 74
     },
+    "/blog/road-to-five-hundred-stars/": {
+      "page_views": 47
+    },
     "/blog/home-lab-setup/": {
       "page_views": 37
-    },
-    "/blog/road-to-five-hundred-stars/": {
-      "page_views": 21
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 17
