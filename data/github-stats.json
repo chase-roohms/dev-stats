@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-22T00:52:12.333027+00:00",
+  "last_updated": "2026-04-22T06:49:21.536275+00:00",
   "totals": {
-    "total_stars": 600,
+    "total_stars": 603,
     "total_forks": 35,
-    "total_watchers": 600,
-    "total_open_issues": 8
+    "total_watchers": 603,
+    "total_open_issues": 5
   },
   "repositories": {
     "chase-roohms/BinarySearchTree_Implementation": {
@@ -64,9 +64,9 @@
       "last_updated": "2026-02-28T06:27:47Z"
     },
     "chase-roohms/docker-compose": {
-      "stars": 7,
+      "stars": 8,
       "forks": 0,
-      "watchers": 7,
+      "watchers": 8,
       "open_issues": 0,
       "description": "Central management of my docker-compose files across multiple systems",
       "last_updated": "2026-03-11T20:54:42Z"
@@ -75,9 +75,9 @@
       "stars": 28,
       "forks": 0,
       "watchers": 28,
-      "open_issues": 1,
+      "open_issues": 0,
       "description": "Safely empties your Plex trash, verifying file availability before doing so. Prevents unintentional deletion of movies and shows when drives are disconnected.",
-      "last_updated": "2026-04-21T18:28:27Z"
+      "last_updated": "2026-04-22T01:06:39Z"
     },
     "chase-roohms/gif-tools": {
       "stars": 0,
@@ -109,7 +109,7 @@
       "watchers": 6,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-04-21T02:20:53Z"
+      "last_updated": "2026-04-22T01:02:38Z"
     },
     "chase-roohms/looney-tunes-assets": {
       "stars": 0,
@@ -203,9 +203,9 @@
       "stars": 7,
       "forks": 0,
       "watchers": 7,
-      "open_issues": 1,
+      "open_issues": 0,
       "description": "Validate JSON, YAML, and XML files against a schema. Schemas can be provided either via file or URL",
-      "last_updated": "2026-04-22T00:48:24Z"
+      "last_updated": "2026-04-22T01:06:17Z"
     },
     "chase-roohms/ServerConfig": {
       "stars": 0,
@@ -264,10 +264,10 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 536,
+      "stars": 538,
       "forks": 33,
-      "watchers": 536,
-      "open_issues": 5,
+      "watchers": 538,
+      "open_issues": 4,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports over 2,000 conversions!",
       "last_updated": "2026-04-22T00:13:40Z"
     },
@@ -289,12 +289,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 28114,
+    "total_downloads": 28702,
     "total_containers": 1
   },
   "containers": {
     "transmute-app/transmute": {
-      "download_count": 28114,
+      "download_count": 28702,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports over 2,000 conversions!",
       "last_updated": "2026-04-22T00:21:40Z",
       "version_count": 974,
