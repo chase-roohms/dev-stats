@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-27T12:44:56.089525+00:00",
+  "last_updated": "2026-04-29T18:40:13.342052+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 9,
-    "total_page_views": 717
+    "total_page_views": 721
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -13,11 +13,11 @@
     "/blog/benefits-of-dockerization/": {
       "page_views": 116
     },
+    "/blog/road-to-five-hundred-stars/": {
+      "page_views": 91
+    },
     "/blog/road-to-one-hundred-stars/": {
       "page_views": 89
-    },
-    "/blog/road-to-five-hundred-stars/": {
-      "page_views": 87
     },
     "/blog/criteria-for-automation/": {
       "page_views": 82
