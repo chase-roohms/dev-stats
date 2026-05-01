@@ -66,6 +66,8 @@ dev-stats/
 │   ├── fetch-dockerhub-stats.py      # Fetch Docker Hub statistics
 │   ├── fetch-github-stats.py         # Fetch GitHub statistics
 │   ├── fetch-google-analytics-stats.py # Fetch Google Analytics statistics
+│   ├── export-github-stats-history.py # Export historical GitHub stats revisions to CSV
+│   ├── plot-github-stats-history.py  # Plot historical GitHub stats CSV data into charts
 │   ├── dh_api/                       # Docker Hub API module
 │   │   ├── __init__.py
 │   │   └── dh_rest.py
@@ -78,7 +80,10 @@ dev-stats/
 ├── data/
 │   ├── dockerhub-stats.json          # Docker Hub statistics output
 │   ├── github-stats.json             # GitHub statistics output
+│   ├── transmute-app-transmute-history.csv # Historical GitHub metrics for transmute
 │   └── google-analytics-stats.json   # Google Analytics statistics output
+├── images/
+│   └── transmute-app-transmute-history/ # Generated charts for the transmute history CSV
 ├── fetch_stats.py                    # Legacy Docker Hub stats script
 └── requirements.txt
 ```
@@ -92,7 +97,7 @@ Fetches all repositories for the configured namespace:
 ```bash
 pip install -r requirements.txt
 cd src
-python fetch-dockerhub-stats.py
+python3 fetch-dockerhub-stats.py
 ```
 
 Configure the namespace in `src/fetch-dockerhub-stats.py`:
@@ -107,7 +112,7 @@ Fetches all repositories for the configured owners, plus GHCR container download
 ```bash
 pip install -r requirements.txt
 cd src
-python fetch-github-stats.py
+python3 fetch-github-stats.py
 ```
 
 Configure the owners in `src/fetch-github-stats.py`:
@@ -124,7 +129,31 @@ The script supports GitHub token authentication for higher rate limits and GHCR 
 export GITHUB_TOKEN="your_github_token_here"
 
 # Without token: unauthenticated requests (60 requests/hour), GHCR stats skipped
-python fetch-github-stats.py
+python3 fetch-github-stats.py
+```
+
+### GitHub Stats History Export
+
+Downloads every committed version of `data/github-stats.json` from the GitHub raw CDN into a temporary directory, then exports a CSV history for one repository.
+
+```bash
+python3 src/export-github-stats-history.py \
+  --target-repository transmute-app/transmute \
+  --output data/transmute-app-transmute-history.csv
+```
+
+Optional flags:
+1. `--limit 10` to test with only the latest 10 revisions
+2. `--keep-temp-dir` to retain the downloaded JSON snapshots after the script finishes
+
+### GitHub Stats History Charts
+
+Reads the exported CSV and writes four PNG charts: one each for stars, forks, and open issues, plus one combined chart.
+
+```bash
+python3 src/plot-github-stats-history.py \
+  --input data/transmute-app-transmute-history.csv \
+  --output-dir images/transmute-app-transmute-history
 ```
 
 To create a GitHub token:
@@ -139,7 +168,7 @@ Fetches page view statistics for blog posts:
 ```bash
 pip install -r requirements.txt
 cd src
-python fetch-google-analytics-stats.py
+python3 fetch-google-analytics-stats.py
 ```
 
 **Configuration via environment variables:**
