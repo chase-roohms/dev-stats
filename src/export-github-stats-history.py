@@ -22,6 +22,7 @@ DEFAULT_TARGET_REPOSITORY = "transmute-app/transmute"
 DEFAULT_OUTPUT_PATH = "data/transmute-app-transmute-history.csv"
 DEFAULT_API_BASE_URL = "https://api.github.com"
 DEFAULT_RAW_BASE_URL = "https://raw.githubusercontent.com"
+CSV_FIELDNAMES = ["sha", "datetime", "star_count", "watcher_count", "fork_count", "issue_count"]
 
 
 @dataclass(frozen=True)
@@ -144,6 +145,7 @@ def extract_history_row(json_path: Path, commit: FileCommit, target_repository: 
         return None
 
     return {
+        "sha": commit.sha,
         "datetime": payload.get("last_updated", commit.committed_at),
         "star_count": repository_stats.get("stars", 0),
         "watcher_count": repository_stats.get("watchers", 0),
@@ -152,13 +154,34 @@ def extract_history_row(json_path: Path, commit: FileCommit, target_repository: 
     }
 
 
+def load_existing_rows(output_path: Path) -> dict[str, dict[str, int | str]]:
+    if not output_path.exists():
+        return {}
+
+    with output_path.open("r", encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        rows_by_sha: dict[str, dict[str, int | str]] = {}
+        for row in reader:
+            sha = row.get("sha")
+            if not sha:
+                continue
+
+            rows_by_sha[sha] = {
+                "sha": sha,
+                "datetime": row["datetime"],
+                "star_count": int(row["star_count"]),
+                "watcher_count": int(row["watcher_count"]),
+                "fork_count": int(row["fork_count"]),
+                "issue_count": int(row["issue_count"]),
+            }
+
+    return rows_by_sha
+
+
 def write_csv(output_path: Path, rows: list[dict[str, int | str]]) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(
-            handle,
-            fieldnames=["datetime", "star_count", "watcher_count", "fork_count", "issue_count"],
-        )
+        writer = csv.DictWriter(handle, fieldnames=CSV_FIELDNAMES)
         writer.writeheader()
         writer.writerows(rows)
 
@@ -171,9 +194,13 @@ def main() -> None:
         output_path = repo_root / output_path
 
     session = build_session()
+    existing_rows_by_sha = load_existing_rows(output_path)
 
     historical_rows: list[dict[str, int | str]] = []
     commit_count = 0
+    reused_row_count = 0
+    downloaded_row_count = 0
+    skipped_commit_count = 0
 
     if args.keep_temp_dir:
         temp_dir_path = Path(tempfile.mkdtemp(prefix="github-stats-history-"))
@@ -193,6 +220,13 @@ def main() -> None:
             limit=args.limit,
         ):
             commit_count += 1
+            cached_row = existing_rows_by_sha.get(commit.sha)
+            if cached_row is not None:
+                reused_row_count += 1
+                historical_rows.append(cached_row)
+                print(f"[{commit_count}] Reusing {commit.sha} ({commit.committed_at}) from {output_path}")
+                continue
+
             print(f"[{commit_count}] Downloading {commit.sha} ({commit.committed_at})")
             json_path = download_commit_file(
                 session=session,
@@ -208,11 +242,18 @@ def main() -> None:
                 target_repository=args.target_repository,
             )
             if row is not None:
+                downloaded_row_count += 1
                 historical_rows.append(row)
+            else:
+                skipped_commit_count += 1
 
         historical_rows.reverse()
         write_csv(output_path=output_path, rows=historical_rows)
-        print(f"Wrote {len(historical_rows)} rows to {output_path}")
+        print(
+            f"Wrote {len(historical_rows)} rows to {output_path} "
+            f"({reused_row_count} reused, {downloaded_row_count} downloaded"
+            f", {skipped_commit_count} skipped)"
+        )
         if args.keep_temp_dir:
             print(f"Kept downloaded revisions in {temp_dir_path}")
     finally:
