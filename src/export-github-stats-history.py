@@ -20,6 +20,7 @@ DEFAULT_REPO_NAME = "dev-stats"
 DEFAULT_STATS_PATH = "data/github-stats.json"
 DEFAULT_TARGET_REPOSITORY = "transmute-app/transmute"
 DEFAULT_OUTPUT_PATH = "data/transmute-app-transmute-history.csv"
+DEFAULT_SKIPPED_OUTPUT_PATH = "data/transmute-app-transmute-history-skipped.json"
 DEFAULT_API_BASE_URL = "https://api.github.com"
 DEFAULT_RAW_BASE_URL = "https://raw.githubusercontent.com"
 CSV_FIELDNAMES = ["sha", "datetime", "star_count", "watcher_count", "fork_count", "issue_count"]
@@ -50,6 +51,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--output",
         default=DEFAULT_OUTPUT_PATH,
         help="Output CSV path, relative to the repository root unless absolute",
+    )
+    parser.add_argument(
+        "--skipped-output",
+        default=DEFAULT_SKIPPED_OUTPUT_PATH,
+        help="Output JSON path for commits that do not contain the target repository",
     )
     parser.add_argument(
         "--limit",
@@ -178,6 +184,31 @@ def load_existing_rows(output_path: Path) -> dict[str, dict[str, int | str]]:
     return rows_by_sha
 
 
+def load_existing_skipped_commits(skipped_output_path: Path) -> dict[str, str]:
+    if not skipped_output_path.exists():
+        return {}
+
+    with skipped_output_path.open("r", encoding="utf-8") as handle:
+        payload = json.load(handle)
+
+    if not isinstance(payload, list):
+        raise ValueError(f"Expected a list of skipped commits in {skipped_output_path}")
+
+    skipped_commits: dict[str, str] = {}
+    for entry in payload:
+        if not isinstance(entry, dict):
+            continue
+
+        sha = entry.get("sha")
+        committed_at = entry.get("committed_at")
+        if not isinstance(sha, str) or not isinstance(committed_at, str):
+            continue
+
+        skipped_commits[sha] = committed_at
+
+    return skipped_commits
+
+
 def write_csv(output_path: Path, rows: list[dict[str, int | str]]) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8", newline="") as handle:
@@ -186,21 +217,35 @@ def write_csv(output_path: Path, rows: list[dict[str, int | str]]) -> None:
         writer.writerows(rows)
 
 
+def write_skipped_commits(skipped_output_path: Path, skipped_commits_by_sha: dict[str, str]) -> None:
+    skipped_output_path.parent.mkdir(parents=True, exist_ok=True)
+    serialized_commits = [
+        {"sha": sha, "committed_at": committed_at}
+        for sha, committed_at in sorted(skipped_commits_by_sha.items(), key=lambda item: item[1])
+    ]
+    skipped_output_path.write_text(json.dumps(serialized_commits, indent=2) + "\n", encoding="utf-8")
+
+
 def main() -> None:
     args = build_parser().parse_args()
     repo_root = get_repo_root()
     output_path = Path(args.output)
     if not output_path.is_absolute():
         output_path = repo_root / output_path
+    skipped_output_path = Path(args.skipped_output)
+    if not skipped_output_path.is_absolute():
+        skipped_output_path = repo_root / skipped_output_path
 
     session = build_session()
     existing_rows_by_sha = load_existing_rows(output_path)
+    skipped_commits_by_sha = load_existing_skipped_commits(skipped_output_path)
 
     historical_rows: list[dict[str, int | str]] = []
     commit_count = 0
     reused_row_count = 0
     downloaded_row_count = 0
     skipped_commit_count = 0
+    reused_skipped_commit_count = 0
 
     if args.keep_temp_dir:
         temp_dir_path = Path(tempfile.mkdtemp(prefix="github-stats-history-"))
@@ -227,6 +272,11 @@ def main() -> None:
                 print(f"[{commit_count}] Reusing {commit.sha} ({commit.committed_at}) from {output_path}")
                 continue
 
+            if commit.sha in skipped_commits_by_sha:
+                reused_skipped_commit_count += 1
+                print(f"[{commit_count}] Reusing skipped {commit.sha} ({commit.committed_at}) from {skipped_output_path}")
+                continue
+
             print(f"[{commit_count}] Downloading {commit.sha} ({commit.committed_at})")
             json_path = download_commit_file(
                 session=session,
@@ -246,14 +296,17 @@ def main() -> None:
                 historical_rows.append(row)
             else:
                 skipped_commit_count += 1
+                skipped_commits_by_sha[commit.sha] = commit.committed_at
 
         historical_rows.reverse()
         write_csv(output_path=output_path, rows=historical_rows)
+        write_skipped_commits(skipped_output_path=skipped_output_path, skipped_commits_by_sha=skipped_commits_by_sha)
         print(
             f"Wrote {len(historical_rows)} rows to {output_path} "
             f"({reused_row_count} reused, {downloaded_row_count} downloaded"
-            f", {skipped_commit_count} skipped)"
+            f", {skipped_commit_count} newly skipped, {reused_skipped_commit_count} skipped reused)"
         )
+        print(f"Wrote {len(skipped_commits_by_sha)} skipped commits to {skipped_output_path}")
         if args.keep_temp_dir:
             print(f"Kept downloaded revisions in {temp_dir_path}")
     finally:
