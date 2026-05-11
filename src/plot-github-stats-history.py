@@ -22,6 +22,7 @@ from matplotlib.ticker import MaxNLocator
 DEFAULT_INPUT_PATH = "data/transmute-app-transmute-history.csv"
 DEFAULT_EVENTS_PATH = "data/transmute-dates.json"
 DEFAULT_OUTPUT_DIR = "images/transmute-app-transmute-history"
+DEFAULT_REGRESSION_DAYS = 10.0
 
 METRICS = [
     ("star_count", "Stars", "#0f766e"),
@@ -45,6 +46,13 @@ class EventMarker:
     event: str
 
 
+@dataclass(frozen=True)
+class RegressionLine:
+    label: str
+    slope_per_day: float
+    values: list[float]
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Plot GitHub stats history CSV data into PNG charts.")
     parser.add_argument("--input", default=DEFAULT_INPUT_PATH, help="Path to the source CSV file")
@@ -58,6 +66,12 @@ def build_parser() -> argparse.ArgumentParser:
         "--title-prefix",
         default="transmute-app/transmute",
         help="Title prefix for the generated charts",
+    )
+    parser.add_argument(
+        "--regression-days",
+        type=float,
+        default=DEFAULT_REGRESSION_DAYS,
+        help="Number of trailing days to use when fitting the linear regression overlay",
     )
     return parser
 
@@ -146,6 +160,43 @@ def annotate_event_markers(axis: plt.Axes, markers: list[EventMarker], values: l
         )
 
 
+def build_recent_regression_line(
+    points: list[HistoryPoint],
+    metric_key: str,
+    regression_days: float,
+) -> RegressionLine | None:
+    if len(points) < 2 or regression_days <= 0:
+        return None
+
+    latest_timestamp = points[-1].timestamp
+    window_start = latest_timestamp.timestamp() - regression_days * 24 * 60 * 60
+    window_points = [point for point in points if point.timestamp.timestamp() >= window_start]
+
+    if len(window_points) < 2:
+        return None
+
+    origin = window_points[0].timestamp.timestamp()
+    x_window = [(point.timestamp.timestamp() - origin) / 86400.0 for point in window_points]
+    y_window = [float(getattr(point, metric_key)) for point in window_points]
+    mean_x = sum(x_window) / len(x_window)
+    mean_y = sum(y_window) / len(y_window)
+    denominator = sum((x_value - mean_x) ** 2 for x_value in x_window)
+    if denominator == 0:
+        return None
+
+    slope = sum((x_value - mean_x) * (y_value - mean_y) for x_value, y_value in zip(x_window, y_window)) / denominator
+    intercept = mean_y - slope * mean_x
+    x_all = [(point.timestamp.timestamp() - origin) / 86400.0 for point in points]
+    regression_values = [slope * x_value + intercept for x_value in x_all]
+    day_label = f"{regression_days:g}"
+
+    return RegressionLine(
+        label=f"{day_label}-day trend",
+        slope_per_day=slope,
+        values=regression_values,
+    )
+
+
 def save_single_metric_chart(
     points: list[HistoryPoint],
     metric_key: str,
@@ -154,19 +205,45 @@ def save_single_metric_chart(
     output_path: Path,
     title_prefix: str,
     event_markers: list[EventMarker],
+    regression_days: float,
 ) -> None:
     figure, axis = plt.subplots(figsize=(13, 7), constrained_layout=True)
     timestamps = [point.timestamp for point in points]
     values = [getattr(point, metric_key) for point in points]
+    regression_line = None
+    if metric_key == "star_count":
+        regression_line = build_recent_regression_line(points, metric_key, regression_days)
 
-    axis.plot(timestamps, values, color=color, linewidth=2.4)
+    axis.plot(timestamps, values, color=color, linewidth=2.4, label=metric_label)
     axis.fill_between(timestamps, values, color=color, alpha=0.12)
+    if regression_line is not None:
+        axis.plot(
+            timestamps,
+            regression_line.values,
+            color=color,
+            linewidth=1.8,
+            linestyle="--",
+            alpha=0.85,
+            label=regression_line.label,
+        )
+        axis.text(
+            0.98,
+            0.98,
+            f"Slope: {regression_line.slope_per_day:.2f} stars/day over last {regression_days:g} days",
+            transform=axis.transAxes,
+            va="top",
+            ha="right",
+            fontsize=9,
+            color="#134e4a",
+            bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": "none", "alpha": 0.85},
+        )
     axis.set_title(f"{title_prefix} {metric_label} History")
     axis.set_xlabel("Date")
     axis.set_ylabel(metric_label)
     axis.yaxis.set_major_locator(MaxNLocator(integer=True))
     axis.grid(True, alpha=0.3)
     configure_time_axis(axis)
+    axis.legend(loc="upper left")
 
     if metric_key == "star_count":
         annotate_event_markers(axis, event_markers, values)
@@ -175,7 +252,7 @@ def save_single_metric_chart(
     plt.close(figure)
 
 
-def save_combined_chart(points: list[HistoryPoint], output_path: Path, title_prefix: str) -> None:
+def save_combined_chart(points: list[HistoryPoint], output_path: Path, title_prefix: str, regression_days: float) -> None:
     figure, primary_axis = plt.subplots(figsize=(14, 8), constrained_layout=True)
     secondary_axis = primary_axis.twinx()
     timestamps = [point.timestamp for point in points]
@@ -250,12 +327,14 @@ def main() -> None:
             output_path=output_dir / file_name,
             title_prefix=args.title_prefix,
             event_markers=event_markers,
+            regression_days=args.regression_days,
         )
 
     save_combined_chart(
         points=points,
         output_path=output_dir / "all-stats-history.png",
         title_prefix=args.title_prefix,
+        regression_days=args.regression_days,
     )
 
     print(f"Saved 4 charts to {output_dir}")
