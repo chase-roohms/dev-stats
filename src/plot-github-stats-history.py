@@ -187,7 +187,10 @@ def build_recent_regression_line(
     slope = sum((x_value - mean_x) * (y_value - mean_y) for x_value, y_value in zip(x_window, y_window)) / denominator
     intercept = mean_y - slope * mean_x
     x_all = [(point.timestamp.timestamp() - origin) / 86400.0 for point in points]
-    regression_values = [slope * x_value + intercept for x_value in x_all]
+    regression_values = [
+        value if value >= 0 else float("nan")
+        for value in (slope * x_value + intercept for x_value in x_all)
+    ]
     day_label = f"{regression_days:g}"
 
     return RegressionLine(
