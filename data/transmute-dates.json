@@ -5,34 +5,52 @@
   },
   {
     "date": "2026-03-10",
-    "event": "LinkedIn post"
+    "event": "LinkedIn post",
+    "link": "https://www.linkedin.com/posts/chaseroohms_ive-been-building-an-open-source-self-hosted-share-7437137235432386560-IWCK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKKdcQB0xh5R8fWzuTg7Vax1vztz6e3k5k"
   },
   {
     "date": "2026-03-16",
-    "event": "Post in u/DigitalEscapeTools"
+    "event": "Post in u/DigitalEscapeTools",
+    "link": "https://www.reddit.com/r/DigitalEscapeTools/comments/1ruyf3c/transmute_selfhosted_opensource_file_converter/"
   },
   {
     "date": "2026-03-20",
-    "event": "selfh.st newsletter"
+    "event": "selfh.st newsletter",
+    "link": "https://selfh.st/weekly/2026-03-20/"
   },
   {
     "date": "2026-03-24",
-    "event": "LinkedIn post"
+    "event": "LinkedIn post",
+    "link": "https://www.linkedin.com/posts/chaseroohms_two-weeks-ago-i-posted-about-transmute-share-7442040762789392384-Nowi/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKKdcQB0xh5R8fWzuTg7Vax1vztz6e3k5k"
   },
   {
     "date": "2026-03-27",
-    "event": "r/SelfHosted post"
+    "event": "r/SelfHosted post",
+    "link": "https://www.reddit.com/r/selfhosted/comments/1s5ly5b/transmute_file_converter/"
   },
   {
     "date": "2026-04-17",
-    "event": "Published on selfh.st"
+    "event": "Published on selfh.st",
+    "link": "https://selfh.st/apps/?tag=File+Conversion"
+  },
+  {
+    "date": "2026-05-01",
+    "event": "v1 Release",
+    "link": "https://github.com/transmute-app/transmute/releases/tag/v1.0.0"
   },
   {
     "date": "2026-05-13",
-    "event": "ViktorKav YouTube Shoutout"
+    "event": "ViktorKav YouTube Shoutout",
+    "link": "https://www.youtube.com/watch?v=4OR0v2iF69w&t=601s"
   },
   {
     "date": "2026-05-21",
-    "event": "Tom Dörr Twitter Shoutout"
+    "event": "Tom Dörr Twitter Shoutout",
+    "link": "https://x.com/tom_doerr/status/2057339930330677394"
+  },
+  {
+    "date": "2026-05-26",
+    "event": "Featured on JustGeek",
+    "link": "https://www.justgeek.fr/transmute-convertisseur-fichiers-open-source-local-150954"
   }
 ]
