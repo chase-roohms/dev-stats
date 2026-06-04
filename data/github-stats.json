@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-06-03T19:30:50.325532+00:00",
+  "last_updated": "2026-06-04T01:22:37.453318+00:00",
   "totals": {
-    "total_stars": 985,
+    "total_stars": 989,
     "total_forks": 59,
-    "total_watchers": 985,
-    "total_open_issues": 5
+    "total_watchers": 989,
+    "total_open_issues": 7
   },
   "repositories": {
     "chase-roohms/awesome-homelab": {
@@ -35,9 +35,9 @@
       "stars": 0,
       "forks": 0,
       "watchers": 0,
-      "open_issues": 2,
+      "open_issues": 3,
       "description": "Personal portfolio website built using Vite + React 18 + TypeScript",
-      "last_updated": "2026-05-29T01:31:31Z"
+      "last_updated": "2026-06-03T22:19:44Z"
     },
     "chase-roohms/cloudflare-error-worker": {
       "stars": 0,
@@ -80,9 +80,9 @@
       "last_updated": "2026-05-03T15:50:12Z"
     },
     "chase-roohms/dumpsterr": {
-      "stars": 29,
+      "stars": 30,
       "forks": 0,
-      "watchers": 29,
+      "watchers": 30,
       "open_issues": 0,
       "description": "Safely empties your Plex trash, verifying file availability before doing so. Prevents unintentional deletion of movies and shows when drives are disconnected.",
       "last_updated": "2026-04-22T01:06:39Z"
@@ -128,9 +128,9 @@
       "last_updated": "2025-12-20T17:32:00Z"
     },
     "chase-roohms/mythicmate": {
-      "stars": 4,
+      "stars": 5,
       "forks": 0,
-      "watchers": 4,
+      "watchers": 5,
       "open_issues": 0,
       "description": "A powerful D&D Discord bot designed for seamless remote gameplay. MythicMate provides intuitive dice rolling, comprehensive rules referencing, and AI-powered assistance, all optimized for speed and ease of use.",
       "last_updated": "2026-01-14T04:07:51Z"
@@ -272,9 +272,9 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 918,
+      "stars": 920,
       "forks": 56,
-      "watchers": 918,
+      "watchers": 920,
       "open_issues": 2,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports over 2,000 conversions!",
       "last_updated": "2026-06-02T22:52:37Z"
@@ -283,9 +283,9 @@
       "stars": 5,
       "forks": 1,
       "watchers": 5,
-      "open_issues": 0,
+      "open_issues": 1,
       "description": "Documentation / promotional website for the Transmute project",
-      "last_updated": "2026-06-01T22:27:45Z"
+      "last_updated": "2026-06-03T22:11:01Z"
     },
     "transmute-app/unraid-template": {
       "stars": 1,
@@ -297,12 +297,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 130240,
+    "total_downloads": 130981,
     "total_containers": 1
   },
   "containers": {
     "transmute-app/transmute": {
-      "download_count": 130240,
+      "download_count": 130981,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports over 2,000 conversions!",
       "last_updated": "2026-06-02T22:59:45Z",
       "version_count": 1098,
