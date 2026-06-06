@@ -149,7 +149,7 @@ def annotate_event_markers(axis: plt.Axes, markers: list[EventMarker], values: l
         axis.annotate(
             marker.event,
             xy=(marker.timestamp, y_position),
-            xytext=(4, 0),
+            xytext=(-10, 0),
             textcoords="offset points",
             rotation=90,
             va="top",
