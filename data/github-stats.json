@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-06-12T01:18:47.308548+00:00",
+  "last_updated": "2026-06-12T07:51:52.290271+00:00",
   "totals": {
-    "total_stars": 1013,
-    "total_forks": 63,
-    "total_watchers": 1013,
+    "total_stars": 1015,
+    "total_forks": 64,
+    "total_watchers": 1015,
     "total_open_issues": 7
   },
   "repositories": {
@@ -272,12 +272,12 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 944,
-      "forks": 59,
-      "watchers": 944,
+      "stars": 946,
+      "forks": 60,
+      "watchers": 946,
       "open_issues": 3,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports over 2,000 conversions!",
-      "last_updated": "2026-06-11T17:43:29Z"
+      "last_updated": "2026-06-12T02:06:18Z"
     },
     "transmute-app/transmute-app.github.io": {
       "stars": 5,
@@ -297,15 +297,15 @@
     }
   },
   "container_totals": {
-    "total_downloads": 152846,
+    "total_downloads": 153811,
     "total_containers": 1
   },
   "containers": {
     "transmute-app/transmute": {
-      "download_count": 152846,
+      "download_count": 153811,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports over 2,000 conversions!",
-      "last_updated": "2026-06-11T17:49:55Z",
-      "version_count": 1122,
+      "last_updated": "2026-06-12T02:13:17Z",
+      "version_count": 1125,
       "visibility": "public",
       "url": "https://github.com/orgs/transmute-app/packages/container/package/transmute"
     }
