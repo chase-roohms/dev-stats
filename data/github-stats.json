@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-06-14T12:51:40.394029+00:00",
+  "last_updated": "2026-06-14T18:39:33.418873+00:00",
   "totals": {
-    "total_stars": 1019,
+    "total_stars": 1020,
     "total_forks": 64,
-    "total_watchers": 1019,
-    "total_open_issues": 10
+    "total_watchers": 1020,
+    "total_open_issues": 8
   },
   "repositories": {
     "chase-roohms/awesome-homelab": {
@@ -14,6 +14,14 @@
       "open_issues": 0,
       "description": "Curating Top Open Source Apps for Homelab Enthusiasts",
       "last_updated": "2026-05-01T23:51:42Z"
+    },
+    "chase-roohms/awesome-selfhosted-data": {
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "description": "machine-readable data for https://awesome-selfhosted.net",
+      "last_updated": "2026-06-14T18:12:56Z"
     },
     "chase-roohms/BinarySearchTree_Implementation": {
       "stars": 0,
@@ -117,7 +125,7 @@
       "watchers": 6,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-06-14T08:51:54Z"
+      "last_updated": "2026-06-14T18:38:35Z"
     },
     "chase-roohms/looney-tunes-assets": {
       "stars": 0,
@@ -261,7 +269,7 @@
       "watchers": 0,
       "open_issues": 0,
       "description": "Automated repository storing the current OpenAPI specs for Transmute",
-      "last_updated": "2026-06-04T03:00:36Z"
+      "last_updated": "2026-06-14T17:53:59Z"
     },
     "transmute-app/samples-examples": {
       "stars": 1,
@@ -272,12 +280,12 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 950,
+      "stars": 951,
       "forks": 60,
-      "watchers": 950,
-      "open_issues": 4,
+      "watchers": 951,
+      "open_issues": 2,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports over 2,000 conversions!",
-      "last_updated": "2026-06-12T22:34:17Z"
+      "last_updated": "2026-06-14T18:01:56Z"
     },
     "transmute-app/transmute-app.github.io": {
       "stars": 5,
@@ -297,15 +305,15 @@
     }
   },
   "container_totals": {
-    "total_downloads": 161342,
+    "total_downloads": 164833,
     "total_containers": 1
   },
   "containers": {
     "transmute-app/transmute": {
-      "download_count": 161342,
+      "download_count": 164833,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports over 2,000 conversions!",
-      "last_updated": "2026-06-12T02:13:17Z",
-      "version_count": 1125,
+      "last_updated": "2026-06-14T18:07:56Z",
+      "version_count": 1130,
       "visibility": "public",
       "url": "https://github.com/orgs/transmute-app/packages/container/package/transmute"
     }
