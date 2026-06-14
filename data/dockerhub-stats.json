@@ -1,24 +1,24 @@
 {
-  "last_updated": "2026-06-14T01:19:04.123479+00:00",
+  "last_updated": "2026-06-14T07:48:16.259668+00:00",
   "totals": {
-    "total_pulls": 17638,
+    "total_pulls": 17652,
     "total_stars": 3
   },
   "repositories": {
     "neonvariant/dumpsterr": {
-      "pull_count": 3898,
+      "pull_count": 3905,
       "star_count": 0,
       "description": "Safely empties your Plex trash, verifying file availability before doing so.",
       "last_updated": "2026-04-16T18:18:58.00705Z"
     },
     "neonvariant/mythicmate": {
-      "pull_count": 774,
+      "pull_count": 775,
       "star_count": 0,
       "description": "A D&D Discord bot that facilitates dice rolling and rules referencing.",
       "last_updated": "2026-01-14T04:07:08.811234Z"
     },
     "neonvariant/transmute": {
-      "pull_count": 12966,
+      "pull_count": 12972,
       "star_count": 3,
       "description": "Convert anything, anywhere. Self hosted file converter for images, video, audio, and more!",
       "last_updated": "2026-06-12T02:13:55.058641Z"
