@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-06-15T19:27:16.077109+00:00",
+  "last_updated": "2026-06-16T08:11:31.514435+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 10,
-    "total_page_views": 796
+    "total_page_views": 797
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
       "page_views": 133
     },
     "/blog/road-to-five-hundred-stars/": {
-      "page_views": 131
+      "page_views": 132
     },
     "/blog/benefits-of-dockerization/": {
       "page_views": 120
