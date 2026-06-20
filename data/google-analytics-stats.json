@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-06-16T08:11:31.514435+00:00",
+  "last_updated": "2026-06-20T07:32:16.382026+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 10,
-    "total_page_views": 797
+    "total_page_views": 798
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -26,7 +26,7 @@
       "page_views": 80
     },
     "/blog/static-site-dynamic-data/": {
-      "page_views": 76
+      "page_views": 77
     },
     "/blog/home-lab-setup/": {
       "page_views": 56
