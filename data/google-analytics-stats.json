@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-06-23T13:11:08.379925+00:00",
+  "last_updated": "2026-06-23T18:52:22.062191+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 11,
-    "total_page_views": 824
+    "total_page_views": 826
   },
   "blog_posts": {
     "/blog/anatomy-of-a-reusable-gha/": {
@@ -20,7 +20,7 @@
       "page_views": 91
     },
     "/blog/criteria-for-automation/": {
-      "page_views": 84
+      "page_views": 86
     },
     "/blog/building-transmute/": {
       "page_views": 81
