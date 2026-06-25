@@ -1,12 +1,15 @@
 {
-  "last_updated": "2026-06-24T18:43:35.616234+00:00",
+  "last_updated": "2026-06-25T07:25:08.999536+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 11,
-    "total_page_views": 834
+    "total_page_views": 973
   },
   "blog_posts": {
+    "/blog/transmute-pikapods/": {
+      "page_views": 158
+    },
     "/blog/anatomy-of-a-reusable-gha/": {
       "page_views": 136
     },
@@ -33,9 +36,6 @@
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 22
-    },
-    "/blog/transmute-pikapods/": {
-      "page_views": 19
     },
     "/blog/home-lab-setup/\"/": {
       "page_views": 4
