@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-06-25T07:25:08.999536+00:00",
+  "last_updated": "2026-06-25T15:08:33.229487+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 11,
-    "total_page_views": 973
+    "total_page_views": 975
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
-      "page_views": 158
+      "page_views": 160
     },
     "/blog/anatomy-of-a-reusable-gha/": {
       "page_views": 136
