@@ -59,8 +59,23 @@
     "link": "https://www.pikapods.com/pods?run=transmute"
   },
   {
+    "date": "2026-06-21",
+    "event": "Published on awesome-selfhosted.net",
+    "link": "https://awesome-selfhosted.net/index.html#transmute"
+  },
+  {
     "date": "2026-06-25",
     "event": "Tom Dörr Twitter Shoutout",
     "link": "https://x.com/tom_doerr/status/2070135450635759837"
+  },
+  {
+    "date": "2026-06-29",
+    "event": "r/SelfHosted post",
+    "link": "https://www.reddit.com/r/selfhosted/comments/1ujajv8/transmute_v200_compressions_3d_model_formats_and/"
+  },
+  {
+    "date": "2026-07-03",
+    "event": "selfh.st newsletter",
+    "link": "https://selfh.st/weekly/2026-07-03/"
   }
 ]
