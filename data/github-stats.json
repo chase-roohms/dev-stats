@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-07-03T18:35:05.634125+00:00",
+  "last_updated": "2026-07-04T00:53:14.205832+00:00",
   "totals": {
-    "total_stars": 1161,
+    "total_stars": 1164,
     "total_forks": 75,
-    "total_watchers": 1161,
+    "total_watchers": 1164,
     "total_open_issues": 15
   },
   "repositories": {
@@ -125,7 +125,7 @@
       "watchers": 6,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-07-03T02:16:00Z"
+      "last_updated": "2026-07-03T19:51:32Z"
     },
     "chase-roohms/looney-tunes-assets": {
       "stars": 0,
@@ -280,9 +280,9 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 1092,
+      "stars": 1095,
       "forks": 71,
-      "watchers": 1092,
+      "watchers": 1095,
       "open_issues": 8,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports close to 3,000 conversions!",
       "last_updated": "2026-06-30T13:11:38Z"
@@ -305,12 +305,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 231939,
+    "total_downloads": 233115,
     "total_containers": 1
   },
   "containers": {
     "transmute-app/transmute": {
-      "download_count": 231939,
+      "download_count": 233115,
       "description": "Self hosted file converter for images, video, audio, json, excel and more. Supports close to 3,000 conversions!",
       "last_updated": "2026-06-30T13:20:48Z",
       "version_count": 1195,
