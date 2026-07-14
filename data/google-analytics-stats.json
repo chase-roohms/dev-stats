@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-07-12T18:24:09.378968+00:00",
+  "last_updated": "2026-07-14T06:52:55.856527+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 11,
-    "total_page_views": 1005
+    "total_page_views": 1009
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -23,7 +23,7 @@
       "page_views": 97
     },
     "/blog/criteria-for-automation/": {
-      "page_views": 90
+      "page_views": 94
     },
     "/blog/building-transmute/": {
       "page_views": 83
