@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-07-24T07:00:18.132167+00:00",
+  "last_updated": "2026-07-24T12:38:43.059719+00:00",
   "totals": {
-    "total_stars": 1260,
+    "total_stars": 1261,
     "total_forks": 81,
-    "total_watchers": 1260,
+    "total_watchers": 1261,
     "total_open_issues": 23
   },
   "repositories": {
@@ -280,9 +280,9 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 1191,
+      "stars": 1192,
       "forks": 76,
-      "watchers": 1191,
+      "watchers": 1192,
       "open_issues": 13,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-07-21T15:06:55Z"
@@ -305,12 +305,17 @@
     }
   },
   "container_totals": {
-    "total_downloads": 0,
+    "total_downloads": 340554,
     "total_containers": 1
   },
   "containers": {
     "transmute-app/transmute": {
-      "error": "502 Server Error: Bad Gateway for url: https://github.com/orgs/transmute-app/packages/container/package/transmute"
+      "download_count": 340554,
+      "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
+      "last_updated": "2026-07-20T04:12:39Z",
+      "version_count": 1211,
+      "visibility": "public",
+      "url": "https://github.com/orgs/transmute-app/packages/container/package/transmute"
     }
   }
 }
