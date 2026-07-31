@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-07-31T07:08:21.410699+00:00",
+  "last_updated": "2026-07-31T18:37:28.027347+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 12,
-    "total_page_views": 1091
+    "total_page_views": 1094
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
       "page_views": 176
     },
     "/blog/road-to-five-hundred-stars/": {
-      "page_views": 140
+      "page_views": 141
     },
     "/blog/anatomy-of-a-reusable-gha/": {
       "page_views": 137
@@ -20,7 +20,7 @@
       "page_views": 124
     },
     "/blog/road-to-one-hundred-stars/": {
-      "page_views": 121
+      "page_views": 123
     },
     "/blog/criteria-for-automation/": {
       "page_views": 96
