@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-08-18T06:14:20.128020+00:00",
+  "last_updated": "2026-08-18T12:12:29.153092+00:00",
   "totals": {
-    "total_stars": 1364,
+    "total_stars": 1365,
     "total_forks": 92,
-    "total_watchers": 1364,
+    "total_watchers": 1365,
     "total_open_issues": 29
   },
   "repositories": {
@@ -88,9 +88,9 @@
       "last_updated": "2026-08-15T04:01:48Z"
     },
     "chase-roohms/dumpsterr": {
-      "stars": 30,
+      "stars": 31,
       "forks": 0,
-      "watchers": 30,
+      "watchers": 31,
       "open_issues": 1,
       "description": "Safely empties your Plex trash, verifying file availability before doing so. Prevents unintentional deletion of movies and shows when drives are disconnected.",
       "last_updated": "2026-04-22T01:06:39Z"
@@ -305,12 +305,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 514231,
+    "total_downloads": 516044,
     "total_containers": 1
   },
   "containers": {
     "transmute-app/transmute": {
-      "download_count": 514231,
+      "download_count": 516044,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-08-07T15:11:15Z",
       "version_count": 1232,
