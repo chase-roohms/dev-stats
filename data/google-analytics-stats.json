@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-08-18T12:12:23.464471+00:00",
+  "last_updated": "2026-08-20T00:20:35.597116+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 12,
-    "total_page_views": 1145
+    "total_page_views": 1148
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -31,11 +31,11 @@
     "/blog/static-site-dynamic-data/": {
       "page_views": 82
     },
+    "/blog/script-or-agent/": {
+      "page_views": 61
+    },
     "/blog/home-lab-setup/": {
       "page_views": 59
-    },
-    "/blog/script-or-agent/": {
-      "page_views": 58
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 23
