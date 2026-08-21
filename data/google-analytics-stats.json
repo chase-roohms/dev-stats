@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-08-20T18:11:38.464296+00:00",
+  "last_updated": "2026-08-21T00:21:55.703855+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 12,
-    "total_page_views": 1152
+    "total_page_views": 1158
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -23,7 +23,7 @@
       "page_views": 127
     },
     "/blog/criteria-for-automation/": {
-      "page_views": 98
+      "page_views": 100
     },
     "/blog/building-transmute/": {
       "page_views": 90
@@ -32,10 +32,10 @@
       "page_views": 82
     },
     "/blog/script-or-agent/": {
-      "page_views": 64
+      "page_views": 66
     },
     "/blog/home-lab-setup/": {
-      "page_views": 60
+      "page_views": 62
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 23
