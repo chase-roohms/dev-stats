@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-08-21T00:21:55.703855+00:00",
+  "last_updated": "2026-08-21T12:12:46.794898+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 12,
-    "total_page_views": 1158
+    "total_page_views": 1161
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -32,7 +32,7 @@
       "page_views": 82
     },
     "/blog/script-or-agent/": {
-      "page_views": 66
+      "page_views": 69
     },
     "/blog/home-lab-setup/": {
       "page_views": 62
