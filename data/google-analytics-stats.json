@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-08-25T06:15:10.861136+00:00",
+  "last_updated": "2026-08-25T12:13:27.395637+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 12,
-    "total_page_views": 1164
+    "total_page_views": 1170
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -17,7 +17,7 @@
       "page_views": 142
     },
     "/blog/road-to-one-hundred-stars/": {
-      "page_views": 132
+      "page_views": 136
     },
     "/blog/benefits-of-dockerization/": {
       "page_views": 127
@@ -32,7 +32,7 @@
       "page_views": 82
     },
     "/blog/script-or-agent/": {
-      "page_views": 71
+      "page_views": 73
     },
     "/blog/home-lab-setup/": {
       "page_views": 62
