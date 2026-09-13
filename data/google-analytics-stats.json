@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-09-13T06:31:47.257639+00:00",
+  "last_updated": "2026-09-13T18:19:19.747352+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
-    "total_blog_posts": 12,
-    "total_page_views": 1207
+    "total_blog_posts": 13,
+    "total_page_views": 1208
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -42,6 +42,9 @@
     },
     "/blog/home-lab-setup/\"/": {
       "page_views": 4
+    },
+    "/blog/why-does-your-enterprise-need-to-invest-in-devops/": {
+      "page_views": 1
     }
   }
 }
