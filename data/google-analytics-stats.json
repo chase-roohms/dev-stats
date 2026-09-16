@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-09-14T00:53:49.438892+00:00",
+  "last_updated": "2026-09-16T12:27:16.230704+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 14,
-    "total_page_views": 1209
+    "total_page_views": 1214
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -13,11 +13,11 @@
     "/blog/anatomy-of-a-reusable-gha/": {
       "page_views": 154
     },
+    "/blog/road-to-five-hundred-stars/": {
+      "page_views": 150
+    },
     "/blog/road-to-one-hundred-stars/": {
       "page_views": 147
-    },
-    "/blog/road-to-five-hundred-stars/": {
-      "page_views": 145
     },
     "/blog/benefits-of-dockerization/": {
       "page_views": 127
