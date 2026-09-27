@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-27T00:56:07.423633+00:00",
+  "last_updated": "2026-09-27T18:20:52.088938+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 15,
-    "total_page_views": 1240
+    "total_page_views": 1248
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
-      "page_views": 182
+      "page_views": 186
+    },
+    "/blog/road-to-five-hundred-stars/": {
+      "page_views": 155
     },
     "/blog/road-to-one-hundred-stars/": {
       "page_views": 155
     },
     "/blog/anatomy-of-a-reusable-gha/": {
       "page_views": 154
-    },
-    "/blog/road-to-five-hundred-stars/": {
-      "page_views": 153
     },
     "/blog/benefits-of-dockerization/": {
       "page_views": 127
@@ -26,7 +26,7 @@
       "page_views": 107
     },
     "/blog/building-transmute/": {
-      "page_views": 93
+      "page_views": 95
     },
     "/blog/script-or-agent/": {
       "page_views": 90
