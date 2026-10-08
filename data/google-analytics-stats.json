@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-07T00:54:24.606945+00:00",
+  "last_updated": "2026-10-08T12:29:21.779201+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
-    "total_blog_posts": 15,
-    "total_page_views": 1287
+    "total_blog_posts": 16,
+    "total_page_views": 1290
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -42,6 +42,9 @@
     },
     "/blog/home-lab-setup/\"/": {
       "page_views": 4
+    },
+    "/blog/ai-adoption-product-problem/": {
+      "page_views": 3
     },
     "/blog/compatibility-packages/": {
       "page_views": 1
