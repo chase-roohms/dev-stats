@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-09T06:33:03.742764+00:00",
+  "last_updated": "2026-10-09T12:27:13.977451+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 16,
-    "total_page_views": 1318
+    "total_page_views": 1323
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -38,7 +38,7 @@
       "page_views": 65
     },
     "/blog/ai-adoption-product-problem/": {
-      "page_views": 31
+      "page_views": 36
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 23
