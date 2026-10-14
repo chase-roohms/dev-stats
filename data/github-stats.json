@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-10-14T06:30:22.424273+00:00",
+  "last_updated": "2026-10-14T12:27:21.485507+00:00",
   "totals": {
-    "total_stars": 1505,
+    "total_stars": 1504,
     "total_forks": 107,
-    "total_watchers": 1505,
+    "total_watchers": 1504,
     "total_open_issues": 36
   },
   "repositories": {
@@ -280,9 +280,9 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 1432,
+      "stars": 1431,
       "forks": 100,
-      "watchers": 1432,
+      "watchers": 1431,
       "open_issues": 22,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-03T13:47:24Z"
@@ -305,12 +305,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1017583,
+    "total_downloads": 1020123,
     "total_containers": 1
   },
   "containers": {
     "transmute-app/transmute": {
-      "download_count": 1017583,
+      "download_count": 1020123,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-03T13:54:00Z",
       "version_count": 1269,
