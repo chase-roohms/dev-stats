@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-14T06:30:15.713590+00:00",
+  "last_updated": "2026-10-16T06:29:41.740901+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 16,
-    "total_page_views": 1356
+    "total_page_views": 1358
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -19,11 +19,11 @@
     "/blog/anatomy-of-a-reusable-gha/": {
       "page_views": 154
     },
-    "/blog/benefits-of-dockerization/": {
+    "/blog/script-or-agent/": {
       "page_views": 127
     },
-    "/blog/script-or-agent/": {
-      "page_views": 125
+    "/blog/benefits-of-dockerization/": {
+      "page_views": 127
     },
     "/blog/criteria-for-automation/": {
       "page_views": 109
