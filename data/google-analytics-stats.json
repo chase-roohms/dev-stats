@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-18T00:49:55.348848+00:00",
+  "last_updated": "2026-10-19T06:40:35.512324+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 16,
-    "total_page_views": 1366
+    "total_page_views": 1367
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -13,10 +13,10 @@
     "/blog/road-to-one-hundred-stars/": {
       "page_views": 160
     },
-    "/blog/anatomy-of-a-reusable-gha/": {
-      "page_views": 155
-    },
     "/blog/road-to-five-hundred-stars/": {
+      "page_views": 156
+    },
+    "/blog/anatomy-of-a-reusable-gha/": {
       "page_views": 155
     },
     "/blog/script-or-agent/": {
