@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-19T18:22:44.212335+00:00",
+  "last_updated": "2026-10-21T18:21:59.962720+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 16,
-    "total_page_views": 1371
+    "total_page_views": 1374
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -26,7 +26,7 @@
       "page_views": 129
     },
     "/blog/criteria-for-automation/": {
-      "page_views": 109
+      "page_views": 110
     },
     "/blog/building-transmute/": {
       "page_views": 102
@@ -38,7 +38,7 @@
       "page_views": 66
     },
     "/blog/ai-adoption-product-problem/": {
-      "page_views": 61
+      "page_views": 63
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 23
