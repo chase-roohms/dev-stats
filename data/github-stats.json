@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-24T06:27:18.360230+00:00",
+  "last_updated": "2026-10-24T12:22:42.583265+00:00",
   "totals": {
-    "total_stars": 1525,
+    "total_stars": 1527,
     "total_forks": 110,
-    "total_watchers": 1525,
-    "total_open_issues": 49
+    "total_watchers": 1527,
+    "total_open_issues": 53
   },
   "repositories": {
     "chase-roohms/awesome-homelab": {
@@ -131,9 +131,9 @@
       "stars": 2,
       "forks": 0,
       "watchers": 2,
-      "open_issues": 0,
+      "open_issues": 2,
       "description": "Unofficial MCP server for LegendKeeper. Lets Claude, Copilot, Cursor and other AI assistants read and build your TTRPG worlds: wiki pages as Markdown, infoboxes, map pins, timelines, tags and images. Python, Docker, stdio + HTTP.",
-      "last_updated": "2026-10-17T04:17:05Z"
+      "last_updated": "2026-10-24T09:34:13Z"
     },
     "chase-roohms/looney-tunes-assets": {
       "stars": 0,
@@ -288,10 +288,10 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 1450,
+      "stars": 1452,
       "forks": 103,
-      "watchers": 1450,
-      "open_issues": 33,
+      "watchers": 1452,
+      "open_issues": 35,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-24T01:33:06Z"
     },
@@ -313,7 +313,7 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1121861,
+    "total_downloads": 1124597,
     "total_containers": 2
   },
   "containers": {
@@ -326,7 +326,7 @@
       "url": "https://github.com/users/chase-roohms/packages/container/package/legendkeeper-mcp"
     },
     "transmute-app/transmute": {
-      "download_count": 1121690,
+      "download_count": 1124426,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-03T13:54:00Z",
       "version_count": 1269,
