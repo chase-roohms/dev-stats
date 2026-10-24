@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-10-23T18:21:29.994754+00:00",
+  "last_updated": "2026-10-24T00:44:19.506181+00:00",
   "totals": {
-    "total_stars": 1523,
+    "total_stars": 1524,
     "total_forks": 110,
-    "total_watchers": 1523,
+    "total_watchers": 1524,
     "total_open_issues": 48
   },
   "repositories": {
@@ -85,7 +85,7 @@
       "watchers": 8,
       "open_issues": 0,
       "description": "Central management of my docker-compose files across multiple systems",
-      "last_updated": "2026-08-15T04:01:48Z"
+      "last_updated": "2026-10-24T00:13:00Z"
     },
     "chase-roohms/dumpsterr": {
       "stars": 32,
@@ -288,9 +288,9 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 1448,
+      "stars": 1449,
       "forks": 103,
-      "watchers": 1448,
+      "watchers": 1449,
       "open_issues": 32,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-23T17:40:41Z"
@@ -313,12 +313,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1116214,
+    "total_downloads": 1119165,
     "total_containers": 2
   },
   "containers": {
     "chase-roohms/legendkeeper-mcp": {
-      "download_count": 157,
+      "download_count": 163,
       "description": "Unofficial MCP server for LegendKeeper. Lets Claude, Copilot, Cursor and other AI assistants read and build your TTRPG worlds: wiki pages as Markdown, infoboxes, map pins, timelines, tags and images. Python, Docker, stdio + HTTP.",
       "last_updated": "2026-10-17T04:06:32Z",
       "version_count": 15,
@@ -326,7 +326,7 @@
       "url": "https://github.com/users/chase-roohms/packages/container/package/legendkeeper-mcp"
     },
     "transmute-app/transmute": {
-      "download_count": 1116057,
+      "download_count": 1119002,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-03T13:54:00Z",
       "version_count": 1269,
