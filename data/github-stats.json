@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-25T18:19:17.741604+00:00",
+  "last_updated": "2026-10-26T00:48:23.037586+00:00",
   "totals": {
     "total_stars": 1526,
-    "total_forks": 110,
+    "total_forks": 109,
     "total_watchers": 1526,
-    "total_open_issues": 53
+    "total_open_issues": 54
   },
   "repositories": {
     "chase-roohms/awesome-homelab": {
@@ -125,7 +125,7 @@
       "watchers": 7,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-10-24T03:39:08Z"
+      "last_updated": "2026-10-25T23:48:38Z"
     },
     "chase-roohms/legendkeeper-mcp": {
       "stars": 2,
@@ -289,9 +289,9 @@
     },
     "transmute-app/transmute": {
       "stars": 1451,
-      "forks": 103,
+      "forks": 102,
       "watchers": 1451,
-      "open_issues": 35,
+      "open_issues": 36,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-24T01:33:06Z"
     },
@@ -313,12 +313,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1136692,
+    "total_downloads": 1139444,
     "total_containers": 2
   },
   "containers": {
     "chase-roohms/legendkeeper-mcp": {
-      "download_count": 190,
+      "download_count": 196,
       "description": "Unofficial MCP server for LegendKeeper. Lets Claude, Copilot, Cursor and other AI assistants read and build your TTRPG worlds: wiki pages as Markdown, infoboxes, map pins, timelines, tags and images. Python, Docker, stdio + HTTP.",
       "last_updated": "2026-10-17T04:06:32Z",
       "version_count": 15,
@@ -326,7 +326,7 @@
       "url": "https://github.com/users/chase-roohms/packages/container/package/legendkeeper-mcp"
     },
     "transmute-app/transmute": {
-      "download_count": 1136502,
+      "download_count": 1139248,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-03T13:54:00Z",
       "version_count": 1269,
