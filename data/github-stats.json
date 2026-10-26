@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-26T06:40:08.173455+00:00",
+  "last_updated": "2026-10-26T13:52:19.333204+00:00",
   "totals": {
-    "total_stars": 1525,
+    "total_stars": 1527,
     "total_forks": 109,
-    "total_watchers": 1525,
-    "total_open_issues": 54
+    "total_watchers": 1527,
+    "total_open_issues": 55
   },
   "repositories": {
     "chase-roohms/awesome-homelab": {
@@ -131,7 +131,7 @@
       "stars": 2,
       "forks": 0,
       "watchers": 2,
-      "open_issues": 2,
+      "open_issues": 3,
       "description": "Unofficial MCP server for LegendKeeper. Lets Claude, Copilot, Cursor and other AI assistants read and build your TTRPG worlds: wiki pages as Markdown, infoboxes, map pins, timelines, tags and images. Python, Docker, stdio + HTTP.",
       "last_updated": "2026-10-24T09:34:13Z"
     },
@@ -288,9 +288,9 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 1450,
+      "stars": 1452,
       "forks": 102,
-      "watchers": 1450,
+      "watchers": 1452,
       "open_issues": 36,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-24T01:33:06Z"
@@ -313,12 +313,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1142211,
+    "total_downloads": 1145347,
     "total_containers": 2
   },
   "containers": {
     "chase-roohms/legendkeeper-mcp": {
-      "download_count": 204,
+      "download_count": 212,
       "description": "Unofficial MCP server for LegendKeeper. Lets Claude, Copilot, Cursor and other AI assistants read and build your TTRPG worlds: wiki pages as Markdown, infoboxes, map pins, timelines, tags and images. Python, Docker, stdio + HTTP.",
       "last_updated": "2026-10-17T04:06:32Z",
       "version_count": 15,
@@ -326,7 +326,7 @@
       "url": "https://github.com/users/chase-roohms/packages/container/package/legendkeeper-mcp"
     },
     "transmute-app/transmute": {
-      "download_count": 1142007,
+      "download_count": 1145135,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-03T13:54:00Z",
       "version_count": 1269,
