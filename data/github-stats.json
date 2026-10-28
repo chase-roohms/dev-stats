@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-28T00:36:31.467566+00:00",
+  "last_updated": "2026-10-28T06:22:30.833068+00:00",
   "totals": {
     "total_stars": 1526,
     "total_forks": 110,
     "total_watchers": 1526,
-    "total_open_issues": 57
+    "total_open_issues": 59
   },
   "repositories": {
     "chase-roohms/awesome-homelab": {
@@ -291,7 +291,7 @@
       "stars": 1450,
       "forks": 103,
       "watchers": 1450,
-      "open_issues": 38,
+      "open_issues": 39,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-24T01:33:06Z"
     },
@@ -299,9 +299,9 @@
       "stars": 5,
       "forks": 5,
       "watchers": 5,
-      "open_issues": 7,
+      "open_issues": 8,
       "description": "Documentation / promotional website for the Transmute project",
-      "last_updated": "2026-10-21T19:46:44Z"
+      "last_updated": "2026-10-28T03:14:22Z"
     },
     "transmute-app/unraid-template": {
       "stars": 1,
