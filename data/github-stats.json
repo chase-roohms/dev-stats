@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-29T12:20:23.777789+00:00",
+  "last_updated": "2026-10-29T18:16:47.850916+00:00",
   "totals": {
     "total_stars": 1529,
     "total_forks": 110,
@@ -125,7 +125,7 @@
       "watchers": 7,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-10-28T23:44:29Z"
+      "last_updated": "2026-10-29T17:04:36Z"
     },
     "chase-roohms/legendkeeper-mcp": {
       "stars": 3,
