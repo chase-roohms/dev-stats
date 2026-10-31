@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-31T00:29:28.373688+00:00",
+  "last_updated": "2026-10-31T12:14:16.966597+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 16,
-    "total_page_views": 1399
+    "total_page_views": 1403
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -14,7 +14,7 @@
       "page_views": 165
     },
     "/blog/road-to-one-hundred-stars/": {
-      "page_views": 161
+      "page_views": 162
     },
     "/blog/road-to-five-hundred-stars/": {
       "page_views": 157
@@ -34,11 +34,11 @@
     "/blog/static-site-dynamic-data/": {
       "page_views": 93
     },
+    "/blog/ai-adoption-product-problem/": {
+      "page_views": 67
+    },
     "/blog/home-lab-setup/": {
       "page_views": 66
-    },
-    "/blog/ai-adoption-product-problem/": {
-      "page_views": 64
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 23
