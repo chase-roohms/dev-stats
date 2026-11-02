@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-01T12:14:23.116316+00:00",
+  "last_updated": "2026-11-02T18:14:01.354263+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 16,
-    "total_page_views": 1407
+    "total_page_views": 1408
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -23,7 +23,7 @@
       "page_views": 133
     },
     "/blog/benefits-of-dockerization/": {
-      "page_views": 131
+      "page_views": 132
     },
     "/blog/criteria-for-automation/": {
       "page_views": 111
