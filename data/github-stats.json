@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-03T06:19:35.102416+00:00",
+  "last_updated": "2026-11-03T12:16:28.138934+00:00",
   "totals": {
     "total_stars": 1536,
     "total_forks": 110,
     "total_watchers": 1536,
-    "total_open_issues": 61
+    "total_open_issues": 62
   },
   "repositories": {
     "chase-roohms/awesome-homelab": {
@@ -131,9 +131,9 @@
       "stars": 3,
       "forks": 0,
       "watchers": 3,
-      "open_issues": 3,
+      "open_issues": 4,
       "description": "Unofficial MCP server for LegendKeeper. Lets Claude, Copilot, Cursor and other AI assistants read and build your TTRPG worlds: wiki pages as Markdown, infoboxes, map pins, timelines, tags and images. Python, Docker, stdio + HTTP.",
-      "last_updated": "2026-10-31T09:34:27Z"
+      "last_updated": "2026-11-03T06:36:12Z"
     },
     "chase-roohms/looney-tunes-assets": {
       "stars": 0,
@@ -313,12 +313,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1204932,
+    "total_downloads": 1206476,
     "total_containers": 2
   },
   "containers": {
     "chase-roohms/legendkeeper-mcp": {
-      "download_count": 324,
+      "download_count": 330,
       "description": "Unofficial MCP server for LegendKeeper. Lets Claude, Copilot, Cursor and other AI assistants read and build your TTRPG worlds: wiki pages as Markdown, infoboxes, map pins, timelines, tags and images. Python, Docker, stdio + HTTP.",
       "last_updated": "2026-10-17T04:06:32Z",
       "version_count": 15,
@@ -326,7 +326,7 @@
       "url": "https://github.com/users/chase-roohms/packages/container/package/legendkeeper-mcp"
     },
     "transmute-app/transmute": {
-      "download_count": 1204608,
+      "download_count": 1206146,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-10-03T13:54:00Z",
       "version_count": 1269,
