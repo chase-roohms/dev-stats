@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-07T00:28:13.078104+00:00",
+  "last_updated": "2026-11-07T06:17:04.414746+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1431
+    "total_page_views": 1440
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -20,7 +20,7 @@
       "page_views": 157
     },
     "/blog/script-or-agent/": {
-      "page_views": 137
+      "page_views": 139
     },
     "/blog/benefits-of-dockerization/": {
       "page_views": 132
@@ -40,11 +40,11 @@
     "/blog/home-lab-setup/": {
       "page_views": 66
     },
+    "/blog/i-gave-ai-control-of-my-house/": {
+      "page_views": 26
+    },
     "/blog/communicationg-with-executives/": {
       "page_views": 23
-    },
-    "/blog/i-gave-ai-control-of-my-house/": {
-      "page_views": 19
     },
     "/blog/home-lab-setup/\"/": {
       "page_views": 4
