@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-08T00:32:37.279272+00:00",
+  "last_updated": "2026-11-08T12:14:08.077776+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1460
+    "total_page_views": 1465
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -17,7 +17,7 @@
       "page_views": 162
     },
     "/blog/road-to-five-hundred-stars/": {
-      "page_views": 157
+      "page_views": 158
     },
     "/blog/script-or-agent/": {
       "page_views": 139
@@ -38,10 +38,10 @@
       "page_views": 73
     },
     "/blog/home-lab-setup/": {
-      "page_views": 66
+      "page_views": 67
     },
     "/blog/i-gave-ai-control-of-my-house/": {
-      "page_views": 40
+      "page_views": 43
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 24
