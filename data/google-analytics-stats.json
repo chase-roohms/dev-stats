@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-12T06:20:03.571105+00:00",
+  "last_updated": "2026-11-12T18:13:39.380474+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1616
+    "total_page_views": 1618
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
@@ -17,7 +17,7 @@
       "page_views": 165
     },
     "/blog/road-to-one-hundred-stars/": {
-      "page_views": 162
+      "page_views": 164
     },
     "/blog/road-to-five-hundred-stars/": {
       "page_views": 158
