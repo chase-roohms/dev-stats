@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-11-11T12:16:47.337483+00:00",
+  "last_updated": "2026-11-12T06:20:03.571105+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1610
+    "total_page_views": 1616
   },
   "blog_posts": {
     "/blog/transmute-pikapods/": {
       "page_views": 188
     },
     "/blog/i-gave-ai-control-of-my-house/": {
-      "page_views": 176
+      "page_views": 177
     },
     "/blog/anatomy-of-a-reusable-gha/": {
       "page_views": 165
@@ -23,7 +23,7 @@
       "page_views": 158
     },
     "/blog/script-or-agent/": {
-      "page_views": 148
+      "page_views": 152
     },
     "/blog/benefits-of-dockerization/": {
       "page_views": 133
@@ -38,7 +38,7 @@
       "page_views": 93
     },
     "/blog/ai-adoption-product-problem/": {
-      "page_views": 73
+      "page_views": 74
     },
     "/blog/home-lab-setup/": {
       "page_views": 67
