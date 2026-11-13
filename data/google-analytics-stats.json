@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-11-12T18:13:39.380474+00:00",
+  "last_updated": "2026-11-13T00:29:53.669753+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1618
+    "total_page_views": 1631
   },
   "blog_posts": {
-    "/blog/transmute-pikapods/": {
+    "/blog/i-gave-ai-control-of-my-house/": {
       "page_views": 188
     },
-    "/blog/i-gave-ai-control-of-my-house/": {
-      "page_views": 177
+    "/blog/transmute-pikapods/": {
+      "page_views": 188
     },
     "/blog/anatomy-of-a-reusable-gha/": {
       "page_views": 165
@@ -41,7 +41,7 @@
       "page_views": 74
     },
     "/blog/home-lab-setup/": {
-      "page_views": 67
+      "page_views": 69
     },
     "/blog/communicationg-with-executives/": {
       "page_views": 24
