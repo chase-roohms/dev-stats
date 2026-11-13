@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-13T00:29:53.669753+00:00",
+  "last_updated": "2026-11-13T18:12:36.180355+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1631
+    "total_page_views": 1632
   },
   "blog_posts": {
     "/blog/i-gave-ai-control-of-my-house/": {
@@ -32,7 +32,7 @@
       "page_views": 111
     },
     "/blog/building-transmute/": {
-      "page_views": 105
+      "page_views": 106
     },
     "/blog/static-site-dynamic-data/": {
       "page_views": 93
