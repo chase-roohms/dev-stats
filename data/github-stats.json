@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-14T12:14:04.028240+00:00",
+  "last_updated": "2026-11-14T18:12:00.609671+00:00",
   "totals": {
     "total_stars": 1549,
     "total_forks": 112,
     "total_watchers": 1549,
-    "total_open_issues": 67
+    "total_open_issues": 38
   },
   "repositories": {
     "chase-roohms/awesome-homelab": {
@@ -123,9 +123,9 @@
       "stars": 7,
       "forks": 1,
       "watchers": 7,
-      "open_issues": 0,
+      "open_issues": 1,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-11-14T06:06:19Z"
+      "last_updated": "2026-11-14T14:48:22Z"
     },
     "chase-roohms/legendkeeper-mcp": {
       "stars": 3,
@@ -277,7 +277,7 @@
       "watchers": 0,
       "open_issues": 0,
       "description": "Automated repository storing the current OpenAPI specs for Transmute",
-      "last_updated": "2026-10-03T13:38:19Z"
+      "last_updated": "2026-11-14T15:19:49Z"
     },
     "transmute-app/samples-examples": {
       "stars": 1,
@@ -291,9 +291,9 @@
       "stars": 1473,
       "forks": 105,
       "watchers": 1473,
-      "open_issues": 45,
+      "open_issues": 15,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
-      "last_updated": "2026-10-31T03:32:12Z"
+      "last_updated": "2026-11-14T15:28:13Z"
     },
     "transmute-app/transmute-app.github.io": {
       "stars": 5,
@@ -313,7 +313,7 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1288860,
+    "total_downloads": 1291278,
     "total_containers": 2
   },
   "containers": {
@@ -326,10 +326,10 @@
       "url": "https://github.com/users/chase-roohms/packages/container/package/legendkeeper-mcp"
     },
     "transmute-app/transmute": {
-      "download_count": 1288280,
+      "download_count": 1290698,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
-      "last_updated": "2026-10-03T13:54:00Z",
-      "version_count": 1269,
+      "last_updated": "2026-11-14T15:36:26Z",
+      "version_count": 1282,
       "visibility": "public",
       "url": "https://github.com/orgs/transmute-app/packages/container/package/transmute"
     }
