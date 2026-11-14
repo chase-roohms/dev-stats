@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-11-14T06:17:19.222716+00:00",
+  "last_updated": "2026-11-14T12:13:52.644995+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1636
+    "total_page_views": 1643
   },
   "blog_posts": {
     "/blog/i-gave-ai-control-of-my-house/": {
-      "page_views": 195
+      "page_views": 199
     },
     "/blog/transmute-pikapods/": {
       "page_views": 188
@@ -26,7 +26,7 @@
       "page_views": 148
     },
     "/blog/benefits-of-dockerization/": {
-      "page_views": 133
+      "page_views": 134
     },
     "/blog/criteria-for-automation/": {
       "page_views": 111
@@ -35,10 +35,10 @@
       "page_views": 104
     },
     "/blog/static-site-dynamic-data/": {
-      "page_views": 93
+      "page_views": 94
     },
     "/blog/ai-adoption-product-problem/": {
-      "page_views": 73
+      "page_views": 74
     },
     "/blog/home-lab-setup/": {
       "page_views": 71
