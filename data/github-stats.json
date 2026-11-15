@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-15T06:17:41.589441+00:00",
+  "last_updated": "2026-11-15T12:15:17.758744+00:00",
   "totals": {
     "total_stars": 1549,
-    "total_forks": 112,
+    "total_forks": 113,
     "total_watchers": 1549,
-    "total_open_issues": 38
+    "total_open_issues": 37
   },
   "repositories": {
     "chase-roohms/awesome-homelab": {
@@ -123,9 +123,9 @@
       "stars": 7,
       "forks": 1,
       "watchers": 7,
-      "open_issues": 1,
+      "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-11-14T14:48:22Z"
+      "last_updated": "2026-11-15T07:09:19Z"
     },
     "chase-roohms/legendkeeper-mcp": {
       "stars": 3,
@@ -289,7 +289,7 @@
     },
     "transmute-app/transmute": {
       "stars": 1473,
-      "forks": 105,
+      "forks": 106,
       "watchers": 1473,
       "open_issues": 15,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
@@ -313,7 +313,7 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1295473,
+    "total_downloads": 1297558,
     "total_containers": 2
   },
   "containers": {
@@ -326,7 +326,7 @@
       "url": "https://github.com/users/chase-roohms/packages/container/package/legendkeeper-mcp"
     },
     "transmute-app/transmute": {
-      "download_count": 1294879,
+      "download_count": 1296964,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-11-14T15:36:26Z",
       "version_count": 1282,
