@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-16T00:35:52.993259+00:00",
+  "last_updated": "2026-11-16T06:30:30.633026+00:00",
   "totals": {
-    "total_stars": 1550,
-    "total_forks": 113,
-    "total_watchers": 1550,
+    "total_stars": 1545,
+    "total_forks": 112,
+    "total_watchers": 1545,
     "total_open_issues": 37
   },
   "repositories": {
@@ -120,12 +120,12 @@
       "last_updated": "2024-07-27T01:29:42Z"
     },
     "chase-roohms/kometa-configs": {
-      "stars": 7,
-      "forks": 1,
-      "watchers": 7,
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-11-15T16:31:13Z"
+      "last_updated": "2026-11-16T04:42:45Z"
     },
     "chase-roohms/legendkeeper-mcp": {
       "stars": 3,
@@ -288,9 +288,9 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 1474,
+      "stars": 1475,
       "forks": 106,
-      "watchers": 1474,
+      "watchers": 1475,
       "open_issues": 15,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-11-14T15:28:13Z"
@@ -313,12 +313,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1301672,
+    "total_downloads": 1303730,
     "total_containers": 2
   },
   "containers": {
     "chase-roohms/legendkeeper-mcp": {
-      "download_count": 608,
+      "download_count": 615,
       "description": "Unofficial MCP server for LegendKeeper. Lets Claude, Copilot, Cursor and other AI assistants read and build your TTRPG worlds: wiki pages as Markdown, infoboxes, map pins, timelines, tags and images. Python, Docker, stdio + HTTP.",
       "last_updated": "2026-10-17T04:06:32Z",
       "version_count": 15,
@@ -326,7 +326,7 @@
       "url": "https://github.com/users/chase-roohms/packages/container/package/legendkeeper-mcp"
     },
     "transmute-app/transmute": {
-      "download_count": 1301064,
+      "download_count": 1303115,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-11-14T15:36:26Z",
       "version_count": 1282,
