@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-19T18:13:58.375719+00:00",
+  "last_updated": "2026-11-20T00:28:17.128660+00:00",
   "totals": {
-    "total_stars": 1548,
+    "total_stars": 1549,
     "total_forks": 111,
-    "total_watchers": 1548,
+    "total_watchers": 1549,
     "total_open_issues": 37
   },
   "repositories": {
@@ -288,9 +288,9 @@
       "last_updated": "2026-03-17T22:14:29Z"
     },
     "transmute-app/transmute": {
-      "stars": 1478,
+      "stars": 1479,
       "forks": 105,
-      "watchers": 1478,
+      "watchers": 1479,
       "open_issues": 16,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-11-14T15:28:13Z"
@@ -313,7 +313,7 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1326737,
+    "total_downloads": 1328350,
     "total_containers": 2
   },
   "containers": {
@@ -326,7 +326,7 @@
       "url": "https://github.com/users/chase-roohms/packages/container/package/legendkeeper-mcp"
     },
     "transmute-app/transmute": {
-      "download_count": 1326050,
+      "download_count": 1327663,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-11-14T15:36:26Z",
       "version_count": 1282,
