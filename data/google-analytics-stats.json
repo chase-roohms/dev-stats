@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-23T00:33:20.789773+00:00",
+  "last_updated": "2026-11-23T18:13:21.929963+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1661
+    "total_page_views": 1663
   },
   "blog_posts": {
     "/blog/i-gave-ai-control-of-my-house/": {
@@ -23,7 +23,7 @@
       "page_views": 160
     },
     "/blog/script-or-agent/": {
-      "page_views": 155
+      "page_views": 157
     },
     "/blog/benefits-of-dockerization/": {
       "page_views": 135
