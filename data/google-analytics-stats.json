@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-23T18:13:21.929963+00:00",
+  "last_updated": "2026-11-24T00:27:49.532295+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1663
+    "total_page_views": 1664
   },
   "blog_posts": {
     "/blog/i-gave-ai-control-of-my-house/": {
@@ -17,7 +17,7 @@
       "page_views": 165
     },
     "/blog/road-to-one-hundred-stars/": {
-      "page_views": 164
+      "page_views": 165
     },
     "/blog/road-to-five-hundred-stars/": {
       "page_views": 160
