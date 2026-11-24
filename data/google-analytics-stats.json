@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-11-24T00:27:49.532295+00:00",
+  "last_updated": "2026-11-24T12:17:05.892894+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1664
+    "total_page_views": 1666
   },
   "blog_posts": {
     "/blog/i-gave-ai-control-of-my-house/": {
-      "page_views": 206
+      "page_views": 208
     },
     "/blog/transmute-pikapods/": {
       "page_views": 188
