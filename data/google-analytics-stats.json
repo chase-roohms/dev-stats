@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-25T00:30:08.840988+00:00",
+  "last_updated": "2026-11-25T06:20:17.902519+00:00",
   "property_id": "516541379",
   "blog_path_prefix": "/blog/",
   "totals": {
     "total_blog_posts": 17,
-    "total_page_views": 1669
+    "total_page_views": 1670
   },
   "blog_posts": {
     "/blog/i-gave-ai-control-of-my-house/": {
@@ -38,7 +38,7 @@
       "page_views": 94
     },
     "/blog/ai-adoption-product-problem/": {
-      "page_views": 76
+      "page_views": 77
     },
     "/blog/home-lab-setup/": {
       "page_views": 71
