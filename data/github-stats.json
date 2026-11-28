@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-28T00:28:57.842478+00:00",
+  "last_updated": "2026-11-28T06:18:02.871899+00:00",
   "totals": {
     "total_stars": 1556,
     "total_forks": 113,
@@ -125,7 +125,7 @@
       "watchers": 1,
       "open_issues": 0,
       "description": "Collection of configuration files for use in Kometa, manages metadata, playlists, collections, etc. for a Plex instance",
-      "last_updated": "2026-11-27T00:27:14Z"
+      "last_updated": "2026-11-28T06:17:36Z"
     },
     "chase-roohms/legendkeeper-mcp": {
       "stars": 3,
@@ -221,7 +221,7 @@
       "watchers": 0,
       "open_issues": 0,
       "description": "Collection of my recyclarr config files",
-      "last_updated": "2025-10-30T22:01:05Z"
+      "last_updated": "2026-11-28T04:57:07Z"
     },
     "chase-roohms/schema-validator": {
       "stars": 8,
@@ -313,12 +313,12 @@
     }
   },
   "container_totals": {
-    "total_downloads": 1382121,
+    "total_downloads": 1383856,
     "total_containers": 2
   },
   "containers": {
     "chase-roohms/legendkeeper-mcp": {
-      "download_count": 847,
+      "download_count": 854,
       "description": "Unofficial MCP server for LegendKeeper. Lets Claude, Copilot, Cursor and other AI assistants read and build your TTRPG worlds: wiki pages as Markdown, infoboxes, map pins, timelines, tags and images. Python, Docker, stdio + HTTP.",
       "last_updated": "2026-10-17T04:06:32Z",
       "version_count": 15,
@@ -326,7 +326,7 @@
       "url": "https://github.com/users/chase-roohms/packages/container/package/legendkeeper-mcp"
     },
     "transmute-app/transmute": {
-      "download_count": 1381274,
+      "download_count": 1383002,
       "description": "Self hosted file converter and compression tool for images, video, audio, json, excel and more. Supports over 3,000 conversions!",
       "last_updated": "2026-11-14T15:36:26Z",
       "version_count": 1282,
